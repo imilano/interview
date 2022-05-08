@@ -1,8 +1,14 @@
 ---
 title: 22. Generate Parentheses
 weight: 10
-draft: true
 ---
+## Description
+
+> Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+## Solutions
+
+### Recursive
 
 参见： https://leetcode-cn.com/problems/generate-parentheses/solution/hui-su-suan-fa-by-liweiwei1419/
 
