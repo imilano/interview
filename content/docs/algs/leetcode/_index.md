@@ -12,6 +12,11 @@ weight: 5
 | 28. Implement strStr | easy | None | No |
 
 
+### Array
+| Problem | Difficulty | Method | Redo | Comment | 
+| :-----: | :----: | :----: | :----: | :----: |
+| 36. Valid Sudoku | middle | None | YES | 注意这里如何创建三维数组，以及坐标的转换 |
+
 ## Search
 
 ### Bianry Search
