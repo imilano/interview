@@ -1,5 +1,6 @@
 ---
 weight: 5
+bookCollapseSection: true
 ---
 
 这里是一些基础知识。
