@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interview</title><link>https://example.com/docs/algs/basic/</link><description>Recent content on Interview</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://example.com/docs/algs/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>排序算法笔记</title><link>https://example.com/docs/algs/basic/msort/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/basic/msort/notes/</guid><description>归并排序 # 归并排序才用了分治法。 从下图可以看到这棵树很像一颗完全二叉树，它的树高为 $\log_2^n$,每次合并操作的平均复杂度是$\Omega(n)$， 所以总的时间复杂度是$n\log_2^n$。最好、最坏和平均复杂度均一致。 动图演示如下： 希尔排序 # 希尔排序也叫缩小增量排序， 是简单插入排序的改进版。希尔排序是基于插入排序的以下两点性质做出改进的：
+插入排序在对几乎已经排好序的数据进行操作时，效率很高，可以打到线性排序的效率。 插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位。 希尔排序的基本思想是：把整个待排序序列分成若干个子序列分别进行插入排序，等数组基本有序之后，再对全体数据进行直接插入排序。
+需要注意的是，希尔排序要的不是让子数组完全有序，而是只需要部分有序即可。
+快速排序 # 快排采用分治法，基本思想是： 通过一趟排序将要排序的序列分成两部分，其中一部分的所有数据都比另一部分要小，然后再通过此方法对数据的左右俩部分分别进行快速排序。
+快排的性能对数据的有序性很敏感，数据越有序，快排的性能越差。对于一个顺序数组进行快排，性能会达到$\Omicron(n)^2$，所以尽量在进行快排之前将数组打乱。
+快排的平均期望时间是$\Omicron(n\log n)$， 且$\Omicron(n\log n)$ 中隐含的常数因子很小，比复杂度稳定于$\Omicron(n\log n)$的归并排序要小很多。所以，对大多数顺序性较弱的随机数组而言，快排总是优于归并排序。
+堆排序 # 堆是具有如下性质的一棵完全二叉树：每个节点的值都大于等于其左右子节点的值，称为大顶堆；每个节点的值都小于等于其左右子节点的值，称为小顶堆。因为堆是一棵完全二叉树，所以也可以用数组来存储。假设小标从 0 开始，则其左子节点位置为 2i+1, 右子节点为 2i + 2, 父节点为 （i-1)/2。</description></item></channel></rss>

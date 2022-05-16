@@ -287,8 +287,31 @@ The final sorted array should not be returned by the function, but instead be st
 Solutions # 二叉树中序遍历，又分为迭代和递归两种方式。
 Recursive # func inorderTraversal(root *TreeNode) []int { var res []int if root == nil { return res } helper(root, &amp;amp;res) return res } func helper(root *TreeNode, res *[]int) { if root == nil { return } helper(root.</description></item><item><title>98. Validate Bianry Search Tree</title><link>https://example.com/docs/algs/leetcode/98_validate_binary_search_tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/98_validate_binary_search_tree/</guid><description>Description # Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 A valid BST is defined as follows:
-The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees.</description></item><item><title>合并两个有序数组</title><link>https://example.com/docs/algs/others/1.-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/others/1.-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/</guid><description>字节真题
-描述 # 给出两个递增数组 A=[3,4,5,0,0]、 B=[7,8] 和两个数 m、n 分别表示两个数组中有效元素的个数。其中 A 中的 0 表示该位置为空位，没有元素。要求合并这两个数组，不使用额外空间。
-解法 # 插入排序 # 思路很简单，将 B 数组的元素都放到 A 数组无效位置去，然后从放进去的那个位置开始进行插入排序。
-归并排序 # 很明显能够看出来这个可以用归并排序的思想来做，但是问题在于不能开辟额外的地址空间，那怎么办呢？其实可以发现 A 数组中是有足够的额外空间的，我们只需要把 A 数组的元素都往后移，那么额外空间就到了 A 数组的前方，那么此时我们就可以进行归并排序了。</description></item><item><title>等概率返回数组中 k 个元素</title><link>https://example.com/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/</guid><description>题目描述 # 给你一个输入数据流，数据内容为一系列的信号。 设计一个方法，能在流的终止信号到达时，返回数据流内的随机k个信号结果。 要求：数据流内每个信号被选中的概率均等。数据流内信号个数不足k个时，全部返回。
-Solutions # 这个题之前在考研的时候见过，核心思想是：维持一个大小为 k 的数组，然后将输入的前 k 个元素存入到数组中的，对于后面的每个元素，使用随机数产生一个[0,k-1]之内的数，然后使用这个数作为下标，替换掉数组中对应位置的数。最后返回数组中的这 k 个数为止。</description></item></channel></rss>
+The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees.</description></item><item><title>Blind 75 List</title><link>https://example.com/docs/algs/leetcode/Blind-75-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/Blind-75-list/</guid><description>Blind 75 # Sequence # Two Sum
+使用一个 map 记录元素值与元素下标的映射，只需要一次扫描数组，检查 target - value 是否在 map 中，同时将 value 和其下标放到 map 中 。
+Best Time to Buy and Sell Stock
+使用一个值记录当前扫描到的最小值，然后扫描一次数组，每扫描到一个值，用当前值减去当前得到的最小值，然后得到结果，取结果的最大值。如果当前值小于最小值，则更新最小值为当前值。只需要一次扫描。
+Contains Duplicate
+简单题，只需要一个 map 就可以了，扫描一次即可。
+Product of Array Except Self 创建两个数组left 和 right，数组 left[i] 表示 i 位置前的元素的累积，数组 right[i]表示 i 位置后的元素的累积。然后创建一个数组 res， res[i] = left[i] * right[i]。
+Maximum Subarray
+Kadane 算法，最优子结构性质，当前位置的和取决于前一个位置的子数组和以及当前元素。</description></item><item><title>Top Interview Questions</title><link>https://example.com/docs/algs/leetcode/Top-Leetcode-Interview-Questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/Top-Leetcode-Interview-Questions/</guid><description>Two Sum 简单题，可跳过。
+Add Two Numbers 不难，注意 dummyHead 的使用
+Longest Substring Without Repeating Character 滑动窗口，不难。
+Median of Two Sorted Arrays TODO 难题， 暂时跳过
+Longest Palindromic Substring 不难
+Reverse Integer NOTE 注意这里对溢出的处理技巧，以及对负数的处理
+String to Integer(atoi) 不难，只是繁琐
+Regular Expression Matching TODO 暂时跳过
+Container With Most Water 不难，但是要注意一题多解
+Roman to Integer 不难
+Longest Common Prefix 不难</description></item><item><title>排序算法笔记</title><link>https://example.com/docs/algs/basic/msort/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/basic/msort/notes/</guid><description>归并排序 # 归并排序才用了分治法。 从下图可以看到这棵树很像一颗完全二叉树，它的树高为 $\log_2^n$,每次合并操作的平均复杂度是$\Omega(n)$， 所以总的时间复杂度是$n\log_2^n$。最好、最坏和平均复杂度均一致。 动图演示如下： 希尔排序 # 希尔排序也叫缩小增量排序， 是简单插入排序的改进版。希尔排序是基于插入排序的以下两点性质做出改进的：
+插入排序在对几乎已经排好序的数据进行操作时，效率很高，可以打到线性排序的效率。 插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位。 希尔排序的基本思想是：把整个待排序序列分成若干个子序列分别进行插入排序，等数组基本有序之后，再对全体数据进行直接插入排序。
+需要注意的是，希尔排序要的不是让子数组完全有序，而是只需要部分有序即可。
+快速排序 # 快排采用分治法，基本思想是： 通过一趟排序将要排序的序列分成两部分，其中一部分的所有数据都比另一部分要小，然后再通过此方法对数据的左右俩部分分别进行快速排序。
+快排的性能对数据的有序性很敏感，数据越有序，快排的性能越差。对于一个顺序数组进行快排，性能会达到$\Omicron(n)^2$，所以尽量在进行快排之前将数组打乱。
+快排的平均期望时间是$\Omicron(n\log n)$， 且$\Omicron(n\log n)$ 中隐含的常数因子很小，比复杂度稳定于$\Omicron(n\log n)$的归并排序要小很多。所以，对大多数顺序性较弱的随机数组而言，快排总是优于归并排序。
+堆排序 # 堆是具有如下性质的一棵完全二叉树：每个节点的值都大于等于其左右子节点的值，称为大顶堆；每个节点的值都小于等于其左右子节点的值，称为小顶堆。因为堆是一棵完全二叉树，所以也可以用数组来存储。假设小标从 0 开始，则其左子节点位置为 2i+1, 右子节点为 2i + 2, 父节点为 （i-1)/2。</description></item><item><title>等概率返回数组中 k 个元素</title><link>https://example.com/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/</guid><description>题目描述 # 给你一个输入数据流，数据内容为一系列的信号。 设计一个方法，能在流的终止信号到达时，返回数据流内的随机k个信号结果。 要求：数据流内每个信号被选中的概率均等。数据流内信号个数不足k个时，全部返回。
+Solutions # 这个题之前在考研的时候见过，核心思想是：维持一个大小为 k 的数组，然后将输入的前 k 个元素存入到数组中的，对于后面的每个元素，使用随机数产生一个[0,k-1]之内的数，然后使用这个数作为下标，替换掉数组中对应位置的数。最后返回数组中的这 k 个数为止。</description></item><item><title/><link>https://example.com/docs/algs/leetcode/14-patterns-to-ace-any-coding-interview-questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/14-patterns-to-ace-any-coding-interview-questions/</guid><description>关于算法笔试的常见的十四中模式。
+1. 滑动窗口 # 特征 # 问题输入是线性的数据结构 目的是找出最长/短子字符串、子数组或者指定期望值 2. 双指针 # 特征 # 对有序序列或者链表进行操作，目的是找到满足特定条件的一串元素 目标是一对元素或者三个元素，甚至是一个子数组 3. 快慢指针 # 特征 # 问题是处理链表或者数组中的循环 当你需要知道某个元素在整个链表中的位置 4. 区间合并 # 区间合并的几种情况： 。
+特征 # 对互斥区间生成一个链表 出现关键词“overlaping intervals” 5. 循环排序(cyclic sort) # 6. 链表就地翻转 # 7. 树的深度优先遍历 # 8. 树的广度优先遍历 # 9. 双堆 # 10. 子集 # 11.</description></item></channel></rss>

@@ -84,4 +84,24 @@ The final sorted array should not be returned by the function, but instead be st
 Solutions # 二叉树中序遍历，又分为迭代和递归两种方式。
 Recursive # func inorderTraversal(root *TreeNode) []int { var res []int if root == nil { return res } helper(root, &amp;amp;res) return res } func helper(root *TreeNode, res *[]int) { if root == nil { return } helper(root.</description></item><item><title>98. Validate Bianry Search Tree</title><link>https://example.com/docs/algs/leetcode/98_validate_binary_search_tree/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/98_validate_binary_search_tree/</guid><description>Description # Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 A valid BST is defined as follows:
-The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees.</description></item></channel></rss>
+The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees.</description></item><item><title>Blind 75 List</title><link>https://example.com/docs/algs/leetcode/Blind-75-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/Blind-75-list/</guid><description>Blind 75 # Sequence # Two Sum
+使用一个 map 记录元素值与元素下标的映射，只需要一次扫描数组，检查 target - value 是否在 map 中，同时将 value 和其下标放到 map 中 。
+Best Time to Buy and Sell Stock
+使用一个值记录当前扫描到的最小值，然后扫描一次数组，每扫描到一个值，用当前值减去当前得到的最小值，然后得到结果，取结果的最大值。如果当前值小于最小值，则更新最小值为当前值。只需要一次扫描。
+Contains Duplicate
+简单题，只需要一个 map 就可以了，扫描一次即可。
+Product of Array Except Self 创建两个数组left 和 right，数组 left[i] 表示 i 位置前的元素的累积，数组 right[i]表示 i 位置后的元素的累积。然后创建一个数组 res， res[i] = left[i] * right[i]。
+Maximum Subarray
+Kadane 算法，最优子结构性质，当前位置的和取决于前一个位置的子数组和以及当前元素。</description></item><item><title>Top Interview Questions</title><link>https://example.com/docs/algs/leetcode/Top-Leetcode-Interview-Questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/Top-Leetcode-Interview-Questions/</guid><description>Two Sum 简单题，可跳过。
+Add Two Numbers 不难，注意 dummyHead 的使用
+Longest Substring Without Repeating Character 滑动窗口，不难。
+Median of Two Sorted Arrays TODO 难题， 暂时跳过
+Longest Palindromic Substring 不难
+Reverse Integer NOTE 注意这里对溢出的处理技巧，以及对负数的处理
+String to Integer(atoi) 不难，只是繁琐
+Regular Expression Matching TODO 暂时跳过
+Container With Most Water 不难，但是要注意一题多解
+Roman to Integer 不难
+Longest Common Prefix 不难</description></item><item><title/><link>https://example.com/docs/algs/leetcode/14-patterns-to-ace-any-coding-interview-questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/14-patterns-to-ace-any-coding-interview-questions/</guid><description>关于算法笔试的常见的十四中模式。
+1. 滑动窗口 # 特征 # 问题输入是线性的数据结构 目的是找出最长/短子字符串、子数组或者指定期望值 2. 双指针 # 特征 # 对有序序列或者链表进行操作，目的是找到满足特定条件的一串元素 目标是一对元素或者三个元素，甚至是一个子数组 3. 快慢指针 # 特征 # 问题是处理链表或者数组中的循环 当你需要知道某个元素在整个链表中的位置 4. 区间合并 # 区间合并的几种情况： 。
+特征 # 对互斥区间生成一个链表 出现关键词“overlaping intervals” 5. 循环排序(cyclic sort) # 6. 链表就地翻转 # 7. 树的深度优先遍历 # 8. 树的广度优先遍历 # 9. 双堆 # 10. 子集 # 11.</description></item></channel></rss>
