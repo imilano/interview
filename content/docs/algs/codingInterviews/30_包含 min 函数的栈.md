@@ -11,8 +11,8 @@ weight: 10
 > top():获取栈顶元素
 > min():获取栈中最小元素
 > 
-> 数据范围：操作数量满足 $0 \le n \le 300$  ，输入的元素满足 $|val| \le 10000$ 
-> 进阶：栈的各个操作的时间复杂度是 $\Omicron(1)$  ，空间复杂度是 $\Omicron(n)$。 
+> 数据范围：操作数量满足 {{< katex >}}$0 \le n \le 300${{< /katex >}}  ，输入的元素满足 {{< katex >}}$|val| \le 10000${{< /katex >}} 
+> 进阶：栈的各个操作的时间复杂度是 {{< katex >}}$\Omicron(1)${{< /katex >}}  ，空间复杂度是 {{< katex >}}$\Omicron(n)${{< /katex >}}。 
 
 ## Solutions
 

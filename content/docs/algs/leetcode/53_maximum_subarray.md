@@ -63,7 +63,7 @@ func max(a,b int) int {
 ```
 
 ### DP
-定义 dp[i] 表示以 i 为结尾的连续子数组的最大和，则很明显，dp[i] 的值受到 dp[i-1] 和 array[i] 的影响，稍微一想即可得到转态转移方程：$dp[i] = \max (dp[i-1] + array[i], array[i])$
+定义 dp[i] 表示以 i 为结尾的连续子数组的最大和，则很明显，dp[i] 的值受到 dp[i-1] 和 array[i] 的影响，稍微一想即可得到转态转移方程：{{< katex >}}$dp[i] = \max (dp[i-1] + array[i], array[i])${{< /katex >}}
 ```go
 func maxSubArray(nums []int) int {
     // write code here
