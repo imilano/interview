@@ -62,10 +62,12 @@ bookCollapseSection: true
 | 21. Merge Two Sorted List               | medium     | Merge Sort       | No   | |
 | 148. Sort List | medium | Merge Sort | YES | 注意这里的自底向上方法；以及自顶向下方法中，要注意断开 middle 和它之前节点的连接|
 | 56. Merge Intervals | medium | Sort | YES | |
+| 179. Largest Number | Medium | Sort | YES | 这里的做法需要十分注意，一般可能注意不到|
+| 75. Sort Colors | medium | Bubble Sort、 Count Sort | No | |
 
 ## Two Pointers
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
-| 876. Middle of the Linked List | Easy | Two Pointer | No | 注意这里 for 循环结束遍历的终止条件 |
-| 
+| 876. Middle of the Linked List | easy | Two Pointer | No | 注意这里 for 循环结束遍历的终止条件 |
+| 27. Remove Elements | easy | Two Pointer | No | |
 

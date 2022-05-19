@@ -1,6 +1,10 @@
 ---
 title: 0075. Sort Colors
 weight: 10
+tags: [
+    "bubble sort",
+    "count sort"
+]
 ---
 
 ## Description
