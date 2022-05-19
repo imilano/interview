@@ -1,5 +1,5 @@
 ---
-title: 105. Construct Bianry Tree From Preorder and Inorder Traversal
+title: 0105. Construct Bianry Tree From Preorder and Inorder Traversal
 weight: 10
 ---
 

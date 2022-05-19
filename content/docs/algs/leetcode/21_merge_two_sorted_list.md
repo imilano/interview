@@ -1,5 +1,5 @@
 ---
-title: 21. Merge Two Sorted List
+title: 0021. Merge Two Sorted List
 weight: 10
 ---
 
@@ -13,6 +13,7 @@ weight: 10
 
 ## Solutions
 
+ 简单题，不多说了，参考归并排序思想。
 ### Merge Sort
 ```go
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {

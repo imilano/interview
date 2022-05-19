@@ -1,5 +1,5 @@
 ---
-title: 124. Binary Tree Maximum Path Sum
+title: 0124. Binary Tree Maximum Path Sum
 weight: 10
 ---
 

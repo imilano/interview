@@ -1,5 +1,5 @@
 ---
-title: 62. Unique Paths
+title: 0062. Unique Paths
 weight: 10
 ---
 ## Description

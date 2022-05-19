@@ -55,3 +55,16 @@ bookCollapseSection: true
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
 | 42. Traping Rain Water | middle     | DP, Stack | YES  |         |
+
+## Sort
+| Problem                | Difficulty | Method    | Redo | Comment |
+| :--------------------- | :--------- | :-------- | :--- | :------ |
+| 21. Merge Two Sorted List               | middle     | Merge Sort       | No   | |
+|
+
+## Two Pointers
+| Problem                | Difficulty | Method    | Redo | Comment |
+| :--------------------- | :--------- | :-------- | :--- | :------ |
+| 876. Middle of the Linked List | Easy | Two Pointer | No | 注意这里 for 循环结束遍历的终止条件 |
+| 
+

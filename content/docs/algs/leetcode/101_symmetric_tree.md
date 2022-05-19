@@ -1,5 +1,5 @@
 ---
-title: 101. Symmetric Tree
+title: 0101. Symmetric Tree
 weight: 10
 ---
 

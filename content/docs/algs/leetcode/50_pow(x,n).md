@@ -1,5 +1,5 @@
 ---
-title: 50. Pow(x, n)
+title: 0050. Pow(x, n)
 weight: 10
 ---
 

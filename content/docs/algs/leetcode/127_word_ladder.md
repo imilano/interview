@@ -1,5 +1,5 @@
 ---
-title: 127. Word Ladder
+title: 0127. Word Ladder
 weight: 10
 ---
 

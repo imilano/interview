@@ -1,5 +1,5 @@
 ---
-title: 131. Palindrome Partitioning
+title: 0131. Palindrome Partitioning
 weight: 10
 ---
 ## Description

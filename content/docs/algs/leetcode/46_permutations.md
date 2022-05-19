@@ -1,5 +1,5 @@
 ---
-title: 46. Permutations
+title: 0046. Permutations
 weight: 10
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 75. Sort Colors
+title: 0075. Sort Colors
 weight: 10
 ---
 

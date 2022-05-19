@@ -1,5 +1,5 @@
 ---
-title: 38. Count and Say
+title: 0038. Count and Say
 weight: 10
 ---
 ## Descrition

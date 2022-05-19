@@ -1,5 +1,5 @@
 ---
-title: 23. Merge K Sorted List
+title: 0023. Merge K Sorted List
 weight: 10
 ---
 

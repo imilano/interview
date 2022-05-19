@@ -1,5 +1,5 @@
 ---
-title: 56. Merge Intervals
+title: 0056. Merge Intervals
 weight: 10
 ---
 ## Description

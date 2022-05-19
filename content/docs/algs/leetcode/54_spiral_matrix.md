@@ -1,5 +1,5 @@
 ---
-title: 54. Spiral Matrix
+title: 0054. Spiral Matrix
 weight: 10
 ---
 

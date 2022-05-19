@@ -1,5 +1,5 @@
 ---
-title: 36. Valid Sudoku
+title: 0036. Valid Sudoku
 weight: 10
 ---
 

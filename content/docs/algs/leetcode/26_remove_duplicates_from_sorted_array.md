@@ -1,5 +1,5 @@
 ---
-title: 26. remove duplicated from sorted array
+title: 0026. remove duplicated from sorted array
 weight: 10
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 84. Largest Rectangle in Histogram
+title: 0084. Largest Rectangle in Histogram
 weight: 10
 ---
 

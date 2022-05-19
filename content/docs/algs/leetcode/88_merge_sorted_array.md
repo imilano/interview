@@ -1,5 +1,5 @@
 ---
-title: 88. Merge Sorted Array
+title: 0088. Merge Sorted Array
 weight: 10
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 128. Longest Consecurive Sequence
+title: 0128. Longest Consecurive Sequence
 weight: 10
 ---
 

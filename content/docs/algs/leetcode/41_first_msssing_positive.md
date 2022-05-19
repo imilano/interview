@@ -1,5 +1,5 @@
 ---
-title: 41. First Missing Positive
+title: 0041. First Missing Positive
 weight: 10
 ---
 ## Description

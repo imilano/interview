@@ -1,5 +1,5 @@
 ---
-title: 125. Valid Palindrome
+title: 0125. Valid Palindrome
 weight: 10
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 42. Traping Rain Water
+title: 0042. Traping Rain Water
 weight: 10
 ---
 

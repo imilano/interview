@@ -1,5 +1,5 @@
 ---
-title: 22. Generate Parentheses
+title: 0022. Generate Parentheses
 weight: 10
 ---
 ## Description

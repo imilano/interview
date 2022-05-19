@@ -1,5 +1,5 @@
 ---
-title: 66. Plus One
+title: 0066. Plus One
 weight: 10
 ---
 ## Description

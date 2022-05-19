@@ -1,5 +1,5 @@
 ---
-title: 49. Group Anagrams
+title: 0049. Group Anagrams
 weight: 10
 ---
 

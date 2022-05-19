@@ -1,5 +1,5 @@
 ---
-title: 33. Search in Rotated Sorted Array
+title: 0033. Search in Rotated Sorted Array
 weight: 10
 ---
 

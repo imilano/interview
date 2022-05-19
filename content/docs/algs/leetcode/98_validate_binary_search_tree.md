@@ -1,5 +1,5 @@
 ---
-title: 98. Validate Bianry Search Tree
+title: 0098. Validate Bianry Search Tree
 weight: 10
 ---
 

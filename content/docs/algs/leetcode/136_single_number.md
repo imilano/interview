@@ -1,5 +1,5 @@
 ---
-title: 136. Single Number
+title: 0136. Single Number
 weight: 10
 ---
 

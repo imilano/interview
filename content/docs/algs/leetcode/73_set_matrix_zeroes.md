@@ -1,5 +1,5 @@
 ---
-title: 73. Set Matrix Zeroes
+title: 0073. Set Matrix Zeroes
 weight: 10
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 104. Maximum Depth of Binary Tree
+title: 0104. Maximum Depth of Binary Tree
 weight: 10
 ---
 

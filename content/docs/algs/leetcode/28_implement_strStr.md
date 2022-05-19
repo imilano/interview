@@ -1,5 +1,5 @@
 ---
-title: 28. Implement strStr
+title: 0028. Implement strStr
 weight: 10
 ---
 

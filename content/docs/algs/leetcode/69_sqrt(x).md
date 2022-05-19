@@ -1,5 +1,5 @@
 ---
-title: 69. Sqrt(x)
+title: 0069. Sqrt(x)
 weight: 10
 ---
 

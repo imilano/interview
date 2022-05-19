@@ -1,5 +1,5 @@
 ---
-title: 118. Pascal's Triangle
+title: 0118. Pascal's Triangle
 weight: 10
 ---
 ## Description

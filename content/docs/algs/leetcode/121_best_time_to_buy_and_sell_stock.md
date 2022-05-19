@@ -1,5 +1,5 @@
 ---
-title: 121. Best Time to But And Sell Stock
+title: 0121. Best Time to But And Sell Stock
 weight: 10
 ---
 ## Description

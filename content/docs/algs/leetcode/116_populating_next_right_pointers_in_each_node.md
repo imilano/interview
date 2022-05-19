@@ -1,5 +1,5 @@
 ---
-title: 116. Populating Next Right Pointers in Eech Node
+title: 0116. Populating Next Right Pointers in Eech Node
 weight: 10
 ---
 ## Description

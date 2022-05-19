@@ -1,5 +1,5 @@
 ---
-title: 94. Bianry Tree Inorder Traversal
+title: 0094. Bianry Tree Inorder Traversal
 weight: 10
 ---
 ## Description

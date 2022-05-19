@@ -1,5 +1,5 @@
 ---
-title: 48. Rotate Image
+title: 0048. Rotate Image
 weight: 10
 ---
 

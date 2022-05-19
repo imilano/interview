@@ -1,5 +1,5 @@
 ---
-title: 34. Find First and Last Position of Element in Sorted Array
+title: 0034. Find First and Last Position of Element in Sorted Array
 weight: 10
 ---
 

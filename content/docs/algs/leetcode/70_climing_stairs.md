@@ -1,5 +1,5 @@
 ---
-title: 70. Climbing Stairs
+title: 0070. Climbing Stairs
 weight: 10
 ---
 

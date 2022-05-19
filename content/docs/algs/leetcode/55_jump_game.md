@@ -1,5 +1,5 @@
 ---
-title: 55. Jump Game
+title: 0055. Jump Game
 weight: 10
 ---
 

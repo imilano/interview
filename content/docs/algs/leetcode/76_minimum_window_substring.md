@@ -1,5 +1,5 @@
 ---
-title: 76. Minimum Window Substring
+title: 0076. Minimum Window Substring
 weight: 10
 ---
 
