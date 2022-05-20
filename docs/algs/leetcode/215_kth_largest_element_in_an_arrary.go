@@ -47,23 +47,19 @@ func findKthLargestUsingSort(nums []int, left, right, k int) int {
 
 func partition(nums []int, left int, right int) int {
 	pivot := nums[left]
-	l, r := left+1, right
-	for l <= r {
-		for nums[l] > nums[pivot] {
-			l++
+	for left < right {
+		for left < right && nums[left] > nums[pivot] {
+			left++
 		}
 
-		for nums[r] < nums[pivot] {
-			r--
+		for left < right && nums[right] < nums[pivot] {
+			right--
 		}
-		if l < r {
-			nums[l], nums[r] = nums[r], nums[l]
-		}
-
+		nums[left], nums[right] = nums[right], nums[left]
 	}
 
-	nums[l], nums[pivot] = nums[pivot], nums[l]
-	return l
+	nums[left], nums[pivot] = nums[pivot], nums[left]
+	return left
 }
 
 //--------------- max heap ----------------------
