@@ -7,6 +7,12 @@ bookCollapseSection: true
 
 ## Data structure
 
+| Problem                | Difficulty | Method    | Redo | Comment |
+| :--------------------- | :--------- | :-------- | :--- | :------ |
+| 160. Intersection of Two Linked Lists | easy | Two Pointer、 Hash Table | YES| 注意可能会出现无交点的情况|
+| 206. Reverse Linked List | easy | Stack、Recursive | YES | 注意这里的递归法中，如何反转节点 |
+| 876. Middle of the Linked List | easy | Two Pointer | YES | 注意这里是如何判断中间节点的 | 
+| 141. Linked List Cycle | easy | Hash Table、 Two Pointer | YES | 注意这里的快慢指针解法 |
 ### String
 | Problem               | Difficulty | Method   | Redo |
 | :-------------------- | :--------- | :------- | :--- |
@@ -64,6 +70,8 @@ bookCollapseSection: true
 | 56. Merge Intervals | medium | Sort | YES | |
 | 179. Largest Number | Medium | Sort | YES | 这里的做法需要十分注意，一般可能注意不到|
 | 75. Sort Colors | medium | Bubble Sort、 Count Sort | No | |
+| 215. Kth Largest Element | medium | Heap、Quick Select | YES | 这里要非常注意快速选择算法 |
+| 4. Median of Two Sorted Arrays | hard | Heap |  YES | 这个题太难了 |
 
 ## Two Pointers
 | Problem                | Difficulty | Method    | Redo | Comment |

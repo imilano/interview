@@ -1,6 +1,10 @@
 ---
 title: 0876. Median of the Linked List
 weight: 10
+tags: [
+	"LinkedList",
+	"Two Pointer"
+]
 ---
 
 ## Description
