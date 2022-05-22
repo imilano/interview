@@ -1,6 +1,11 @@
 ---
-title: 0088. Merge Sorted Array
+title: 0091. Decode Ways
 weight: 10
+tags: [
+	"Recursive",
+	"String",
+	"DP"
+]
 ---
 
 ## Description
