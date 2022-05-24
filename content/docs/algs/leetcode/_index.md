@@ -7,6 +7,10 @@ bookCollapseSection: true
 
 ## Data structure
 
+### Queue
+| Problem                | Difficulty | Method    | Redo | Comment |
+| :--------------------- | :--------- | :-------- | :--- | :------ |
+| 225. Implement Stack using Queues | easy | Queue | No | 简单题，不需要多看|
 ### Linked List
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
