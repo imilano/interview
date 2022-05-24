@@ -17,7 +17,7 @@ tags: [
 
 
 ## Solutions
-这里很难想到要用动态规划吧。假设 `dp[i][j]` 表示一个能包含 i 个 0 和 j 个 1 的子集中的字符串个数。则当扫描到字符串`str[i]`时，统计其中出现0 位 zeros，1 为 ones。则 {{< katex >}}dp[i][j] = max(dp[i][j], dp[i-zeros][j-ones]+1){{< katex >}}。
+这里很难想到要用动态规划吧。假设 `dp[i][j]` 表示一个能包含 i 个 0 和 j 个 1 的子集中的字符串个数。则当扫描到字符串`str[i]`时，统计其中出现0 位 zeros，1 为 ones。则 {{< katex >}}dp[i][j] = max(dp[i][j], dp[i-zeros][j-ones]+1){{< /katex >}}。
 
 ```go
  func findMaxForm(strs []string, m int, n int) int {
