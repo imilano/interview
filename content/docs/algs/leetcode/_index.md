@@ -65,6 +65,7 @@ bookCollapseSection: true
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
 | 42. Traping Rain Water | medium     | DP, Stack | YES  |         |
+| 474. Ones and Zeroes | medium | DP | YES | 这里的递推式还是想不太出来，注意遍历的方向 |
 
 ## Sort
 | Problem                | Difficulty | Method    | Redo | Comment |
