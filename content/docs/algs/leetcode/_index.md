@@ -7,6 +7,9 @@ bookCollapseSection: true
 
 ## Data structure
 
+### Stack
+| Problem                | Difficulty | Method    | Redo | Comment |
+| 155. Min Stack | easy | Stack、Monotone Stack | No | |
 ### Queue
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
@@ -14,6 +17,8 @@ bookCollapseSection: true
 | 346. Moving Average from Data Stream | easy | Queue | No | 简单题，不需要多看 | 
 | 281. ZigZag Iterator | medium | Queue | YES | 注意这里的队列的使用，还是挺妙的 | 
 | 1429. First Unique Number | unknown | Queue、 Hash Table | No | |
+| 362. Design Hit Counter | unknown | Queue | No | |
+
 
 
 ### Linked List
@@ -38,6 +43,7 @@ bookCollapseSection: true
 | :------------------------- | :--------- | :--------------- | :--- | :----------------------------------------------------------------------- |
 | 36. Valid Sudoku           | medium     | None             | YES  | 注意这里如何创建三维数组，以及坐标的转换                                 |
 | 41. First Missing Positive | Hard       | HashTable, Array | YES  | 注意 while 循环是如何交换元素的，以及 while 循环为什么不能用 if 语句代替 |
+| 54. Spiral Matrix | medium | | Array | YES | 注意这里的终止条件判断 |
 
 ## Search
 

@@ -1,6 +1,10 @@
 ---
 title: 0148. Sort List
 weight: 10
+tags: [
+    "Sort",
+    "Merge Sort"
+]
 ---
 
 ## Description
