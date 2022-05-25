@@ -2,8 +2,7 @@
 title: 0346. Moving Average from Data Stream
 weight: 10
 tags: [
-	"LinkedList",
-	"Two Pointer"
+	"Queue",
 ]
 ---
 ## Description
@@ -21,27 +20,34 @@ tags: [
 ## Solutions
 
 很明显是使用队列啦。
-TODO
 ```go
 type MovingAverage struct {
-
+	nums []int
+	size int
+	sum int
 }
 
 /** Initialize your data structure here. */
 func Constructor(size int) MovingAverage {
-
+	return MovingAverage{nums: []int{}, size: size, sum: 0}
 }
 
 func (this *MovingAverage) Next(val int) float64 {
-
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
+	if this.size < 3 {
+		*this.nums  = append(*this.nums, val)
+		sum += val
+		this.size++
+	} else {
+		num := (*this).nums[0]
+		*this.nums = (*this).nums[1:]
+		sum -= num
+		*this.nums = append(*this.nums, val)
+		sum += val
 	}
-	return b
+
+	return float64(sum/this.num)
 }
+
 
 /**
  * Your MovingAverage object will be instantiated and called as such:

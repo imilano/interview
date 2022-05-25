@@ -11,6 +11,11 @@ bookCollapseSection: true
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
 | 225. Implement Stack using Queues | easy | Queue | No | 简单题，不需要多看|
+| 346. Moving Average from Data Stream | easy | Queue | No | 简单题，不需要多看 | 
+| 281. ZigZag Iterator | medium | Queue | YES | 注意这里的队列的使用，还是挺妙的 | 
+| 1429. First Unique Number | unknown | Queue、 Hash Table | No | |
+
+
 ### Linked List
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |

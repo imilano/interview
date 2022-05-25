@@ -1,6 +1,9 @@
 ---
 title: 0054. Spiral Matrix
 weight: 10
+tags: [
+    "Array"
+]
 ---
 
 ## Description
