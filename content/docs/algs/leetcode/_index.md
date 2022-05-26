@@ -10,6 +10,10 @@ bookCollapseSection: true
 ### Stack
 | Problem                | Difficulty | Method    | Redo | Comment |
 | 155. Min Stack | easy | Stack、Monotone Stack | No | |
+| 150. Evalute Reverse Polish Notation | medium | Stack | No | 简单题，无需多看  |
+| 224. Basic Calculator | hard | Stack | YES | 题目为难题，暂时跳过。注意这里是如何将中缀表达式转换为后缀表达式的 | 
+| 227. Basic Calculator | medium | Stack | YES | 稍微有点耗时，先跳过 |
+| 20. Valid Parentheses | easy | Stack | No | |
 ### Queue
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
@@ -70,9 +74,10 @@ bookCollapseSection: true
 
 ### Bit Manipulation
 
-| Problem                 | Difficulty | Method           | Redo |
-| :---------------------- | :--------- | :--------------- | :--- |
-| 29. Divide Two Integers | medium     | Bit manipulation | YES  |
+| Problem                 | Difficulty | Method           | Redo | Comment |
+| :---------------------- | :--------- | :--------------- | :--- | :----|
+| 29. Divide Two Integers | medium     | Bit manipulation | YES  | |
+| 191. Number of 1 Bits | easy | Bit manipulation | No | 这题太简单了，没什么好说的|
 
 
 ## Dynamic Programming

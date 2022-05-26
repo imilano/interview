@@ -1,6 +1,10 @@
 ---
 title: 0021. Merge Two Sorted List
 weight: 10
+tags: [
+	"Sort",
+	"Merge Sort"
+]
 ---
 
 ## Description
