@@ -14,6 +14,7 @@ bookCollapseSection: true
 | 224. Basic Calculator | hard | Stack | YES | 题目为难题，暂时跳过。注意这里是如何将中缀表达式转换为后缀表达式的 | 
 | 227. Basic Calculator | medium | Stack | YES | 稍微有点耗时，先跳过 |
 | 20. Valid Parentheses | easy | Stack | No | |
+| 1472. Design Browser History | medium | Stack | No | |
 ### Queue
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
