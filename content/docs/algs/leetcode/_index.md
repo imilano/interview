@@ -15,6 +15,7 @@ bookCollapseSection: true
 | 227. Basic Calculator | medium | Stack | YES | 稍微有点耗时，先跳过 |
 | 20. Valid Parentheses | easy | Stack | No | |
 | 1472. Design Browser History | medium | Stack | No | |
+| 1047. Remove All Adjacent Duplicates in String | easy | Stack | No | |
 ### Queue
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
