@@ -79,6 +79,7 @@ bookCollapseSection: true
 | :---------------------- | :--------- | :--------------- | :--- | :----|
 | 29. Divide Two Integers | medium     | Bit manipulation | YES  | |
 | 191. Number of 1 Bits | easy | Bit manipulation | No | 这题太简单了，没什么好说的|
+| 1342. Number of Steps to Reduce a Number to Zero | easy | Bit manipulation | No | 太简单了，不用再看|
 
 
 ## Dynamic Programming
@@ -87,6 +88,7 @@ bookCollapseSection: true
 | :--------------------- | :--------- | :-------- | :--- | :------ |
 | 42. Traping Rain Water | medium     | DP, Stack | YES  |         |
 | 474. Ones and Zeroes | medium | DP | YES | 这里的递推式还是想不太出来，注意遍历的方向 |
+| 354. Russian Doll Envelopes | hard | DP | YES | 注意这里更最长递增子序列问题的相似性|
 
 ## Sort
 | Problem                | Difficulty | Method    | Redo | Comment |

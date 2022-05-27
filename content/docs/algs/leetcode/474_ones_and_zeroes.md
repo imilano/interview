@@ -3,7 +3,7 @@ title: 0474. Ones and Zeroes
 weight: 10
 tags: [
 	"String",
-	"Dynamic Programming"
+	"DP"
 ]
 ---
 
