@@ -82,7 +82,10 @@ bookCollapseSection: true
 | 191. Number of 1 Bits | easy | Bit manipulation | No | 这题太简单了，没什么好说的|
 | 1342. Number of Steps to Reduce a Number to Zero | easy | Bit manipulation | No | 太简单了，不用再看|
 
-
+### Math Computation
+| Problem                 | Difficulty | Method           | Redo | Comment |
+| :---------------------- | :--------- | :--------------- | :--- | :----|
+| 268. Missing Number | easy | Math | No | 简单题，直接略过|	
 ## Dynamic Programming
 
 | Problem                | Difficulty | Method    | Redo | Comment |
