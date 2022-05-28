@@ -16,6 +16,8 @@ bookCollapseSection: true
 | 20. Valid Parentheses | easy | Stack | No | |
 | 1472. Design Browser History | medium | Stack | No | |
 | 1047. Remove All Adjacent Duplicates in String | easy | Stack | No | |
+| 1249. Minimum Remove to Make Valid Parentheses | medium | Stack | Yes | |
+| 735. Asteroid Collision | medium | Stack | Yes | |
 ### Queue
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
@@ -25,7 +27,10 @@ bookCollapseSection: true
 | 1429. First Unique Number | unknown | Queue、 Hash Table | No | |
 | 362. Design Hit Counter | unknown | Queue | No | |
 
-
+### Hash Table
+| Problem                | Difficulty | Method    | Redo | Comment |
+| :--------------------- | :--------- | :-------- | :--- | :------ |
+| 1. Two Sum | easy | Hash Table、Sort、Two Pointer | No | |
 
 ### Linked List
 | Problem                | Difficulty | Method    | Redo | Comment |
