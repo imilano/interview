@@ -43,10 +43,11 @@ bookCollapseSection: true
 | 92. Reverse Linked List II | medium | Linked List、 Stack | YES | 注意这里是如何使用指针来进行翻转的 |
 | 328. Odd Even Linked List | medium | Linked List、 Two Pointer | YES | 注意这里是如何连接节点的 | 
 ### String
-| Problem               | Difficulty | Method   | Redo |
-| :-------------------- | :--------- | :------- | :--- |
-| 28. Implement strStr  | easy       | None     | No   |
-| 44. Wildcard Matching | hard       | Recusive | No   |
+| Problem               | Difficulty | Method   | Redo | Comment |
+| :-------------------- | :--------- | :------- | :--- | :----|
+| 28. Implement strStr  | easy       | None     | No   | |
+| 44. Wildcard Matching | hard       | Recusive | No   | |
+| 318. Maximum Product of Word Lengths | medium | Hash Table | Yes | 这里的解法很精妙，使用了一个 int 来做记录，提升了性能| 
 
 
 ### Array
