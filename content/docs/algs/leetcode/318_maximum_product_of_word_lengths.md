@@ -3,7 +3,7 @@ title: 0318. Maximum Product of Word Lengths
 weight: 10
 tags: [
 	"String",
-	"Hash Table"
+	"Hash Table",
 	"Bit Manipulation"
 ]
 ---
