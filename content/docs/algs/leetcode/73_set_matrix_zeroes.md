@@ -1,6 +1,9 @@
 ---
 title: 0073. Set Matrix Zeroes
 weight: 10
+tags: [
+    "Memorial"
+]
 ---
 
 ## Descriptioin
