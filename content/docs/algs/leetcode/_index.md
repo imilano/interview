@@ -31,6 +31,7 @@ bookCollapseSection: true
 | Problem                | Difficulty | Method    | Redo | Comment |
 | :--------------------- | :--------- | :-------- | :--- | :------ |
 | 1. Two Sum | easy | Hash Table、Sort、Two Pointer | No | |
+| 146. LRU Cache | medium | Double Linked List、Hash Table | YES | 在双向链表中添加 dummyHead 和 dummyTail 能够避免很多条件判断 |
 
 ### Linked List
 | Problem                | Difficulty | Method    | Redo | Comment |
@@ -42,6 +43,7 @@ bookCollapseSection: true
 | 142. Linked List Cycle II | medium | Linked List、Hash Table、Two Pointer | YES | 注意这里的快慢指针解法 |
 | 92. Reverse Linked List II | medium | Linked List、 Stack | YES | 注意这里是如何使用指针来进行翻转的 |
 | 328. Odd Even Linked List | medium | Linked List、 Two Pointer | YES | 注意这里是如何连接节点的 | 
+| 146. LRU Cache | medium | Double Linked List、Hash Table | YES | 在双向链表中添加 dummyHead 和 dummyTail 能够避免很多条件判断 |
 ### String
 | Problem               | Difficulty | Method   | Redo | Comment |
 | :-------------------- | :--------- | :------- | :--- | :----|
