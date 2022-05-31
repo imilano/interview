@@ -33,6 +33,7 @@ bookCollapseSection: true
 | 1. Two Sum                        | easy       | Hash Table、Sort、Two Pointer  | No   |                                                              |
 | 146. LRU Cache                    | medium     | Double Linked List、Hash Table | YES  | 在双向链表中添加 dummyHead 和 dummyTail 能够避免很多条件判断 |
 | 128. Longest Consecutive Sequence | medium     | Hash Table                     | YES  | 注意考虑为什么这里可以把遍历过的元素删除掉                   |
+| 380. Insert Delete GetRandom O(1) | medium | Hash Table、Array | YES | 注意这里删除元素的 tricky 部分|
 
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
