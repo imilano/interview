@@ -36,6 +36,7 @@ bookCollapseSection: true
 | 380. Insert Delete GetRandom O(1) | medium | Hash Table、Array | YES | 注意这里删除元素的 tricky 部分|
 | 1461. Check  If a String Contans All Binary Codes of Size K | medium | Hash Table、String | YES |这里首先要注意怎么一步一步从暴力算法开始进行优化，然后逐渐过渡到使用 map 来做记忆化的；另外还需要注意 golang 的格式化字符串 padding 方法|
 | 349. Intersection of Two Arrays | easy | Hash Table | No ||
+| 350. Intersection of Two Arrays II | easy | Hash Table | No ||
 
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
