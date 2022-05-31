@@ -11,50 +11,62 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <label for=section-2135572cc1c37157e360bfb0e28edc10 class="flex justify-between"><a href=/docs/algs/others/>Others</a></label><ul><li><a href=/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/>等概率返回数组中 k 个元素</a></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/alex-shpak/hugo-book target=_blank rel=noopener>Github</a></li><li><a href=https://themes.gohugo.io/hugo-book/ target=_blank rel=noopener>Hugo Themes</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Memorial</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/bubble-sort/>bubble sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/count-sort/>count sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/DP/>DP</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
 <span>7</span></li><li class="flex justify-between"><a href=/tags/Math/>Math</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
+<span>8</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>7</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/73_set_matrix_zeroes/>0073. Set Matrix Zeroes</a></h2><div><a href=/tags/Memorial/>Memorial</a></div><p>Descriptioin # Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0&rsquo;s.
 You must do it in place.
 Solutions # 这里需要注意的是，因为要求不使用额外的内存空间，所以我们就要有这种充分利用原有空间的觉悟。这里的思想是，先检查第一行第一列是否有 0，如果有，则将相应的标志设置为 true，然后使用第一行和第一列来做标记。从第二行第二列开始遍历数组，当 matrix[i][j] = 0 时，则将该行对应的第一个数设置为 0，将该列对应的第一个数设置为 0。遍历结束之后再遍历一次数组，也是从第一行和第一列开始，如果改行或者该列的第一个元素为 0， 则将相应的相应的格子设置为 0.遍历结束后，再根据刚开始设置的行 flag 和列 flag 判断是否应该将第一行和第一列设置为 0.
 func setZeroes(matrix [][]int) { m, n := len(matrix), len(matrix[0]) var rowZero, colZero bool // 检查第一列是否包含 0 for i := 0; i &lt; m ;i++ { if matrix[i][0] == 0 { colZero = true break } } // 检查第一行是否包含 0 for i := 0; i &lt; n; i++ { if matrix[0][i] == 0 { rowZero = true break } } // 检查剩余行和列是否包含 0，如果包含，则将相应的第一行位置设为 0，第一列位置设为 0 for i := 1; i &lt; m ;i++ { for j := 1; j &lt; n; j++ { if matrix[i][j] == 0 { matrix[i][0] = 0 matrix[0][j] = 0 } } } // 根据第一行第一列的检测结果，将相应的行和列设置为 0 for i := 1; i &lt; m; i++ { for j := 1; j &lt; n; j++ { if matrix[i][0] == 0 || matrix[0][j] == 0 { matrix[i][j] = 0 } } } // 如果第一行有 0， 则将第一行设置为 0 if rowZero { for i := 0; i &lt; n; i++ { matrix[0][i] = 0 } } // 如果第一列有 0， 则将第一列设置为 0 if colZero { for i := 0; i &lt; m ;i++ { matrix[i][0] = 0 } } }</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/bubble-sort/>bubble sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/count-sort/>count sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/DP/>DP</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
 <span>7</span></li><li class="flex justify-between"><a href=/tags/Math/>Math</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
+<span>8</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>7</span></li></ul></li></ul></nav></div></aside></main></body></html>

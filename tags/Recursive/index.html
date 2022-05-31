@@ -11,28 +11,38 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <label for=section-2135572cc1c37157e360bfb0e28edc10 class="flex justify-between"><a href=/docs/algs/others/>Others</a></label><ul><li><a href=/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/>等概率返回数组中 k 个元素</a></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/alex-shpak/hugo-book target=_blank rel=noopener>Github</a></li><li><a href=https://themes.gohugo.io/hugo-book/ target=_blank rel=noopener>Hugo Themes</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Recursive</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/bubble-sort/>bubble sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/count-sort/>count sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/DP/>DP</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
 <span>7</span></li><li class="flex justify-between"><a href=/tags/Math/>Math</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
+<span>8</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
-<span>7</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/91_decode_ways/>0091. Decode Ways</a></h2><div><a href=/tags/Recursive/>Recursive</a>,
+<span>7</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/22_generate_parentheses/>0022. Generate Parentheses</a></h2><div><a href=/tags/Recursive/>Recursive</a>,
+<a href=/tags/Branch-Pruning/>Branch Pruning</a></div><p>Description # Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+Solutions # Recursive # 参见： https://leetcode-cn.com/problems/generate-parentheses/solution/hui-su-suan-fa-by-liweiwei1419/
+使用两个变量 left 和 right 来表示「左括号使用了集合」和「右括号使用了几个」，通过分析可以得到以下结论： - 只有当left 和 right 都比 n 小的时候，才产生分支。 - 产生左分支的时候，只看当前还有左括号可用 - 产生右分支的时候，还受到左括号数量的限制，left 要大于 right 的时候，才可以产生分支。否则就是无效分支，可以直接返回。 - 在左边和右边的括号数都等于 n 的时候结算。
+func generateParenthesis(n int) []string { var res []string if n == 0 { return res } generateParenthesisHelper(n, 0,0,"", &res) return res } func generateParenthesisHelper(n, left, right int, cur string, res *[]string) { if left == n && right == n { *res = append(*res, cur) return } // 剪枝 if left &lt; right { return } if left &lt; n { generateParenthesisHelper(n, left+1, right, cur + "(", res) } if right &lt; n { generateParenthesisHelper(n, left, right+1, cur + ")", res) } }</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/91_decode_ways/>0091. Decode Ways</a></h2><div><a href=/tags/Recursive/>Recursive</a>,
 <a href=/tags/String/>String</a>,
 <a href=/tags/DP/>DP</a></div><p>Description # A message containing letters from A-Z can be encoded into numbers using the following mapping:
 &lsquo;A&rsquo; -> &ldquo;1&rdquo; &lsquo;B&rsquo; -> &ldquo;2&rdquo; &mldr; &lsquo;Z&rsquo; -> &ldquo;26&rdquo; To decode an encoded message, all the digits must be grouped then mapped back into letters using the reverse of the mapping above (there may be multiple ways). For example, &ldquo;11106&rdquo; can be mapped into:
@@ -48,25 +58,31 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode { if head == 
 Solutions # Iterative # 迭代法，但是要注意虚拟头节点的使用。
 func reverseList(head *ListNode) *ListNode { if head == nil || head.Next == nil { return head } dummy := new(ListNode) cur := head for cur != nil { tail := dummy.Next next := cur.
 <a href=/docs/algs/leetcode/206_reverse_linked_list/>...</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/bubble-sort/>bubble sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/count-sort/>count sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/DP/>DP</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
 <span>7</span></li><li class="flex justify-between"><a href=/tags/Math/>Math</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
+<span>8</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>7</span></li></ul></li></ul></nav></div></aside></main></body></html>

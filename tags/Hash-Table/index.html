@@ -11,26 +11,32 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <label for=section-2135572cc1c37157e360bfb0e28edc10 class="flex justify-between"><a href=/docs/algs/others/>Others</a></label><ul><li><a href=/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/>等概率返回数组中 k 个元素</a></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/alex-shpak/hugo-book target=_blank rel=noopener>Github</a></li><li><a href=https://themes.gohugo.io/hugo-book/ target=_blank rel=noopener>Hugo Themes</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Hash Table</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/bubble-sort/>bubble sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/count-sort/>count sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/DP/>DP</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
 <span>7</span></li><li class="flex justify-between"><a href=/tags/Math/>Math</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
+<span>8</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>7</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/01_two_sum/>0001. Two Sum</a></h2><div><a href=/tags/Sort/>Sort</a>,
 <a href=/tags/Hash-Table/>Hash Table</a>,
@@ -38,7 +44,19 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 Solutions # Hash Table # 这里因为答案唯一，那么也就意味着数组里的元素是唯一的，所以可以使用 map 来做，只需要一次遍历即可，具体看下面代码就好。
-func twoSum(nums []int, target int) []int { dict := make(map[int]int) for idx, num := range nums{ t := target - num if exist(dict, t) { return []int{idx, dict[t]} } dict[num] = idx } return nil } func exist(dict map[int]int, target int) bool { if _, ok := dict[target]; ok { return true } return false } Sort && Two Pointer # 这里也可以使用排序来做，根据值进行排序，但是需要保存该值对应的下标。排好序之后可以使用双指针，一个 left 指向开头，一个 right 指向结尾，计算二者和，如果小于 target，则 left++，否则 right++，直到二者之和等于 target 即可。思路大概就这样，代码就不写了。</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/128_longest_consecutive_sequence/>0128. Longest Consecurive Sequence</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a></div><p>Description # Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+func twoSum(nums []int, target int) []int { dict := make(map[int]int) for idx, num := range nums{ t := target - num if exist(dict, t) { return []int{idx, dict[t]} } dict[num] = idx } return nil } func exist(dict map[int]int, target int) bool { if _, ok := dict[target]; ok { return true } return false } Sort && Two Pointer # 这里也可以使用排序来做，根据值进行排序，但是需要保存该值对应的下标。排好序之后可以使用双指针，一个 left 指向开头，一个 right 指向结尾，计算二者和，如果小于 target，则 left++，否则 right++，直到二者之和等于 target 即可。思路大概就这样，代码就不写了。</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/41_first_msssing_positive/>0041. First Missing Positive</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a>,
+<a href=/tags/Array/>Array</a></div><p>Description # Given an unsorted integer array nums, return the smallest missing positive integer.
+You must implement an algorithm that runs in O(n) time and uses constant extra space.
+Solutions # Hash Table # 可以使用一个 hash table 记录所以出现的值，然后找出当前值中的最大值。然后从 1 到最大值开始遍历，如果出现一个不在 hash table 中的数，则将该数返回即可。如果所有数都出现在了 hash table 中，那么返回最大值加 1 即可。但是最后这里需要注意的是，有可能整个数组都是负数，这样的话会导致前面的判断失效，所以返回值应该最小要返回 1.
+func firstMissingPositive(nums []int) int { dict := make(map[int]bool) curMax := nums[0] for _, num := range nums { dict[num] = true if num > curMax { curMax = num } } for i := 1; i &lt;= curMax; i++ { if _, ok := dict[i]; !
+<a href=/docs/algs/leetcode/41_first_msssing_positive/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/49_group_anagrams/>0049. Group Anagrams</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a>,
+<a href=/tags/String/>String</a></div><p>Description # Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Solutions # 简单的方法就是，对具有相同字母以及字母出现次数也相同的字符串进行排序时，其排序结果都是一样的。所以可以创建一个 map，其中 key 为字符串的排序，value 为具有这样一个排序结果的字符串数组。
+func groupAnagrams(strs []string) [][]string { var res [][]string m := make(map[string][]string) for _, str := range strs { str_splited := strings.
+<a href=/docs/algs/leetcode/49_group_anagrams/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/50_powxn/>0050. Pow(x, n)</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a></div><p>Description # Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+Solutions # Map # 可以使用快速幂以及记忆化数组，单独使用快速幂会导致超时，所以需要配合记忆化数组使用。
+func myPow(x float64, n int) float64 { if x == 0 { return 0 } if n == 0 { return 1 } var negative bool if n &lt; 0 { negative = true n = -n } dict := make(map[int]float64) dict[0], dict[1] = 1, x res := helper(x, n, &dict) if negative { return 1 / res } return res } func helper(x float64, n int, dict *map[int]float64) float64 { if value, ok := (*dict)[n]; ok { return value } res := helper(x, n/2, dict) * helper(x, n/2, dict) * helper(x, n%2, dict) (*dict)[n] = res return res }</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/128_longest_consecutive_sequence/>0128. Longest Consecurive Sequence</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a></div><p>Description # Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 You must write an algorithm that runs in O(n) time.
 Solutions # 使用一个集合存入所有的数字，然后遍历数组中的每个数字，如果其在集合中存在，那么将其移除，然后 pre 再自减 1，直至pre 不在集合之中，对 next 采用同样的方法，那么 next - pre -1 就是当前数字的最长连续序列。之所以要移除数字，是为了避免重复计算。比如说对于 4、3、2，如果计算 4 的时候不把 3 和 2 移除掉，那么计算 3 和 2 的时候就会出现重复计算的情况。
 func longestConsecutive(nums []int) int { var res int dict := make(map[int]bool) for _, num := range nums { dict[num] = true } for _, num := range nums { left, right := num -1, num + 1 for dict[left] == true { delete(dict, left) left-- } for dict[right] == true { delete(dict, right) right++ } res = max(res, right-left-1) } return res } func max(a,b int) int { if a &lt; b { return b } return a }</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/141_Linked-List-Cycle/>0141. Linked List Cycle</a></h2><div><a href=/tags/LinkedList/>LinkedList</a>,
@@ -62,33 +80,32 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode { if headA == nil || 
 <a href=/tags/Hash-Table/>Hash Table</a>,
 <a href=/tags/Bit-Manipulation/>Bit Manipulation</a></div><p>Description # Given a string array words, return the maximum value of length(word[i]) * length(word[j]) where the two words do not share common letters. If no such two words exist, return 0.
 Solutions # \( \Omicron (n^2) \) 的解法，相当于暴力求解了，因为限定了字符串中只会出现小写字符，而小写字符只有 26 个，那么就可以一个 32 位的 int 值 mask 来记录每个字符是否出现过，然后不同字符的 mask 之间进行相与，如果与的结果为 0，说明这两个字符没有重叠字符，那么就更新结果。
-func maxProduct(words []string) int { var res int size := len(words) dict := make(map[int]int, size) for i := 0; i &lt; size; i++ { for _, r := range words[i] { dict[i] |= 1 &lt;&lt; (int(r) - int('a')) } for j := 0; j &lt; i; j++ { if (dict[i] & dict[j]) == 0 { res = max(res, len(words[i]) * len(words[j])) } } } return res } func max(a,b int) int { if a &lt; b { return b } return a }</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/380_insert_delete_getrandom_O1/>0380. Insert Delete GetRandom O(1)</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a>,
-<a href=/tags/Array/>Array</a></div><p>Solutions # Hash Table & Array # 这里使用一个 Hash Table 和一个数组，Hash Table 存储的是值和该值在数组中的下标。这里稍微有点 tricky 的是，删除的时候，不是直接在 Hash Table 中删除该元素，而是在数组中将该元素和尾元素调换位置，然后删除尾元素。 这样所有操作都能达到 \( \Omicron(1) \) 的时间复杂度。
-import "math/rand" type RandomizedSet struct { dict map[int]int nums []int } func Constructor() RandomizedSet { return RandomizedSet{dict: make(map[int]int), nums: []int{}} } func (this *RandomizedSet) Insert(val int) bool { var present bool if _, ok := (*this).
-<a href=/docs/algs/leetcode/380_insert_delete_getrandom_O1/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/1461_check_if_a_string_contains_all_binary_codes_of_size_k/>1461. Check If a String Contains All Binary Codes of Size K</a></h2><div><a href=/tags/Hash-Table/>Hash Table</a>,
-<a href=/tags/String/>String</a></div><p>Description # Given a binary string s and an integer k, return true if every binary code of length k is a substring of s. Otherwise, return false.
-Solutions # Brute Force # 下面是题主一开始想出来的方法，可惜最后几个用例过于变态，所以超时了。
-func hasAllCodes(s string, k int) bool { size := len(s) if size &lt; k { return false } // golang 格式化打印字符串，%04b 这个格式化字符串能够将数字转换为二进制表示，并且当表示字符串长度小于 4 时，能够自动在前面增加 0 作为 padding。 fmtStr := "%0" + strconv.
-<a href=/docs/algs/leetcode/1461_check_if_a_string_contains_all_binary_codes_of_size_k/>...</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+func maxProduct(words []string) int { var res int size := len(words) dict := make(map[int]int, size) for i := 0; i &lt; size; i++ { for _, r := range words[i] { dict[i] |= 1 &lt;&lt; (int(r) - int('a')) } for j := 0; j &lt; i; j++ { if (dict[i] & dict[j]) == 0 { res = max(res, len(words[i]) * len(words[j])) } } } return res } func max(a,b int) int { if a &lt; b { return b } return a }</p></article><ul class="pagination pagination-default"><li class="page-item disabled"><a aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a></li><li class="page-item active"><a aria-current=page aria-label="Page 1" class=page-link role=button>1</a></li><li class=page-item><a href=/tags/Hash-Table/page/2/ aria-label="Page 2" class=page-link role=button>2</a></li><li class=page-item><a href=/tags/Hash-Table/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/tags/Hash-Table/page/2/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/bubble-sort/>bubble sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/count-sort/>count sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/DP/>DP</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
 <span>7</span></li><li class="flex justify-between"><a href=/tags/Math/>Math</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
+<span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
+<span>8</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>7</span></li></ul></li></ul></nav></div></aside></main></body></html>
