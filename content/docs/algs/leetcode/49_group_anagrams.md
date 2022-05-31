@@ -1,6 +1,10 @@
 ---
 title: 0049. Group Anagrams
 weight: 10
+tags: [
+	"Hash Table",
+	"String"
+]
 ---
 
 ## Description

@@ -1,6 +1,10 @@
 ---
 title: 0034. Find First and Last Position of Element in Sorted Array
 weight: 10
+tags: [
+    "Search",
+    "Binary Search"
+]
 ---
 
 ## Description

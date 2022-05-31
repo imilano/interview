@@ -1,6 +1,9 @@
 ---
 title: 0028. Implement strStr
 weight: 10
+tags: [
+    "String"
+]
 ---
 
 ## Description

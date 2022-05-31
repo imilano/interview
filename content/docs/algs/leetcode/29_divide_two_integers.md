@@ -1,6 +1,8 @@
 ---
 title: 0029. Divide Two Integers
 weight: 10
+tags: [
+]
 ---
 
 ## Description

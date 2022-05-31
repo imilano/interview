@@ -1,6 +1,10 @@
 ---
 title: 0041. First Missing Positive
 weight: 10
+tags: [
+    "Hash Table",
+    "Array"
+]
 ---
 ## Description
 

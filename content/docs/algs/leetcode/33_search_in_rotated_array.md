@@ -1,6 +1,10 @@
 ---
 title: 0033. Search in Rotated Sorted Array
 weight: 10
+tags: [
+	"Binary Search",
+	"Search"
+]
 ---
 
 ## Description

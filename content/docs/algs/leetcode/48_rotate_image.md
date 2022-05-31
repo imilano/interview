@@ -1,6 +1,10 @@
 ---
 title: 0048. Rotate Image
 weight: 10
+tags: [
+    "Matrix",
+    "Array"
+]
 ---
 
 ## Description

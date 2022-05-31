@@ -1,6 +1,10 @@
 ---
 title: 0023. Merge K Sorted List
 weight: 10
+tags: [
+	"Heap",
+	"Merge Sort"
+]
 ---
 
 ## Description

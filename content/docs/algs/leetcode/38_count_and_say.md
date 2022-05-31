@@ -1,6 +1,9 @@
 ---
 title: 0038. Count and Say
 weight: 10
+tags: [
+    "String"
+]
 ---
 ## Descrition
 > The count-and-say sequence is a sequence of digit strings defined by the recursive formula:

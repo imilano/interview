@@ -1,6 +1,9 @@
 ---
 title: 0046. Permutations
 weight: 10
+tags: [
+    "Backtracing"
+]
 ---
 
 ## Description

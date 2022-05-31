@@ -1,6 +1,9 @@
 ---
 title: 0050. Pow(x, n)
 weight: 10
+tags: [
+    "Hash Table"
+]
 ---
 
 ## Description

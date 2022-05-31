@@ -1,6 +1,9 @@
 ---
 title: 0042. Traping Rain Water
 weight: 10
+tags: [
+    "Array"
+]
 ---
 
 ## Description

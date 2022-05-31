@@ -1,6 +1,10 @@
 ---
 title: 0022. Generate Parentheses
 weight: 10
+tags: [
+	"Recursive",
+	"Branch Pruning"
+]
 ---
 ## Description
 

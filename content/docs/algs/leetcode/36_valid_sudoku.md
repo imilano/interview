@@ -1,6 +1,10 @@
 ---
 title: 0036. Valid Sudoku
 weight: 10
+tags: [
+    "Array",
+    "Matrix"
+]
 ---
 
 ## Description
