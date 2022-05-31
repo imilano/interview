@@ -9,4 +9,5 @@ Solutions # Min Heap # 很简单的想法，使用最小堆即可。
 Solutions # 第一个想法很简单，先扫描一遍链表，把扫描到的值记录到数组，然后对数组进行排序，最后再把排序结果赋值给原链表即可。时间复杂度 \(\Omicron(n\log n)\) , 空间复杂度 \($\Omicron(n)$\) 。
 方法二，可以用插入排序的思想。维持一个排好序的链表，从头结点开始扫描，每扫描到一个节点，就将其插入到这个有序链表中去。这样空间复杂度就是 \($\Omicron(1)$\) ，时间复杂度 \($\Omicron(n^2)$\) 。
 follow up 但是这里要求的是时间复杂度 \($\Omicron(n\log n)$\) ，空间复杂度 \($\Omicron(1)$\) ，那很明显上述解法都不满足。这里竟然可以用归并排序，归并排序的时间复杂度是 \($\Omicron(n\logn)$\) ，归并排序又分为自顶向下和自底向上两种，前者空间复杂度是 \($\Omicron(\log n)$\) （因为栈深度），后者可以达到 \($\Omicron(1)$\) 。
-这里是自顶向下的解法，需要注意的是，在 getMiddle 函数中将 middle 节点和前一个节点断开是一个非常重要的操作。</description></item></channel></rss>
+这里是自顶向下的解法，需要注意的是，在 getMiddle 函数中将 middle 节点和前一个节点断开是一个非常重要的操作。
+/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func sortList(head *ListNode) *ListNode { return mergeSortUpDown(head) } func mergeSortUpDown(head *ListNode) *ListNode { if head == nil || head.</description></item></channel></rss>
