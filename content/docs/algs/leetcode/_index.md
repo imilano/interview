@@ -8,23 +8,25 @@ bookCollapseSection: true
 ## Data structure
 
 ### Stack
-| Problem                | Difficulty | Method    | Redo | Comment |
-| :----------------------------------- | :--------- | :----------------- | :--- | :------------------------------- |
-| 155. Min Stack | easy | Stack、Monotone Stack | No | |
-| 150. Evalute Reverse Polish Notation | medium | Stack | No | 简单题，无需多看  |
-| 224. Basic Calculator | hard | Stack | YES | 题目为难题，暂时跳过。注意这里是如何将中缀表达式转换为后缀表达式的 | 
-| 227. Basic Calculator | medium | Stack | YES | 稍微有点耗时，先跳过 |
-| 20. Valid Parentheses | easy | Stack | No | |
-| 1472. Design Browser History | medium | Stack | No | |
-| 1047. Remove All Adjacent Duplicates in String | easy | Stack | No | |
-| 1249. Minimum Remove to Make Valid Parentheses | medium | Stack | Yes | |
-| 735. Asteroid Collision | medium | Stack | Yes | |
+| Problem                                        | Difficulty | Method                | Redo | Comment                                                            |
+| :--------------------------------------------- | :--------- | :-------------------- | :--- | :----------------------------------------------------------------- |
+| 155. Min Stack                                 | easy       | Stack、Monotone Stack | No   |                                                                    |
+| 150. Evalute Reverse Polish Notation           | medium     | Stack                 | No   | 简单题，无需多看                                                   |
+| 224. Basic Calculator                          | hard       | Stack                 | YES  | 题目为难题，暂时跳过。注意这里是如何将中缀表达式转换为后缀表达式的 |
+| 227. Basic Calculator                          | medium     | Stack                 | YES  | 稍微有点耗时，先跳过                                               |
+| 20. Valid Parentheses                          | easy       | Stack                 | No   |                                                                    |
+| 1472. Design Browser History                   | medium     | Stack                 | No   |                                                                    |
+| 1047. Remove All Adjacent Duplicates in String | easy       | Stack                 | No   |                                                                    |
+| 1249. Minimum Remove to Make Valid Parentheses | medium     | Stack                 | Yes  |                                                                    |
+| 735. Asteroid Collision                        | medium     | Stack                 | Yes  |                                                                    |
 
 ### Heap
-| Problem      | Difficulty | Method    | Redo | Comment |
-| :--------- | :--------- | :----------------- | :--- | :---------- |
-| 973. K Closest Points to Origin | medium | Sort、 Heap | No | 要看到本质问题，然后解决本质问题。 |
-| 347. Top K Frequent Elements | medium | Sort、 Hash Table、Heap | No | |
+| Problem                         | Difficulty | Method                  | Redo | Comment                            |
+| :------------------------------ | :--------- | :---------------------- | :--- | :--------------------------------- |
+| 973. K Closest Points to Origin | medium     | Sort、 Heap             | No   | 要看到本质问题，然后解决本质问题。 |
+| 347. Top K Frequent Elements    | medium     | Sort、 Hash Table、Heap | No   |                                    |
+| 23. Merge K Sorted Lists        | medium     | Sort、 Heap             | No   |                                    |
+
 ### Queue
 | Problem                              | Difficulty | Method             | Redo | Comment                          |
 | :----------------------------------- | :--------- | :----------------- | :--- | :------------------------------- |
@@ -33,17 +35,19 @@ bookCollapseSection: true
 | 281. ZigZag Iterator                 | medium     | Queue              | YES  | 注意这里的队列的使用，还是挺妙的 |
 | 1429. First Unique Number            | unknown    | Queue、 Hash Table | No   |                                  |
 | 362. Design Hit Counter              | unknown    | Queue              | No   |                                  |
+| 264. Ugly Number II | medium | Queue | YES |第一次做的时候做了一个错误解法，还是要注意丑数是怎么推出来的 |
 
 ### Hash Table
-| Problem                           | Difficulty | Method                         | Redo | Comment                                                      |
-| :-------------------------------- | :--------- | :----------------------------- | :--- | :----------------------------------------------------------- |
-| 1. Two Sum                        | easy       | Hash Table、Sort、Two Pointer  | No   |                                                              |
-| 146. LRU Cache                    | medium     | Double Linked List、Hash Table | YES  | 在双向链表中添加 dummyHead 和 dummyTail 能够避免很多条件判断 |
-| 128. Longest Consecutive Sequence | medium     | Hash Table                     | YES  | 注意考虑为什么这里可以把遍历过的元素删除掉                   |
-| 380. Insert Delete GetRandom O(1) | medium | Hash Table、Array | YES | 注意这里删除元素的 tricky 部分|
-| 1461. Check  If a String Contans All Binary Codes of Size K | medium | Hash Table、String | YES |这里首先要注意怎么一步一步从暴力算法开始进行优化，然后逐渐过渡到使用 map 来做记忆化的；另外还需要注意 golang 的格式化字符串 padding 方法|
-| 349. Intersection of Two Arrays | easy | Hash Table | No ||
-| 350. Intersection of Two Arrays II | easy | Hash Table | No ||
+| Problem                                                     | Difficulty | Method                         | Redo | Comment                                                                                                                                  |
+| :---------------------------------------------------------- | :--------- | :----------------------------- | :--- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Two Sum                                                  | easy       | Hash Table、Sort、Two Pointer  | No   |                                                                                                                                          |
+| 146. LRU Cache                                              | medium     | Double Linked List、Hash Table | YES  | 在双向链表中添加 dummyHead 和 dummyTail 能够避免很多条件判断                                                                             |
+| 128. Longest Consecutive Sequence                           | medium     | Hash Table                     | YES  | 注意考虑为什么这里可以把遍历过的元素删除掉                                                                                               |
+| 380. Insert Delete GetRandom O(1)                           | medium     | Hash Table、Array              | YES  | 注意这里删除元素的 tricky 部分                                                                                                           |
+| 1461. Check  If a String Contans All Binary Codes of Size K | medium     | Hash Table、String             | YES  | 这里首先要注意怎么一步一步从暴力算法开始进行优化，然后逐渐过渡到使用 map 来做记忆化的；另外还需要注意 golang 的格式化字符串 padding 方法 |
+| 349. Intersection of Two Arrays                             | easy       | Hash Table                     | No   |                                                                                                                                          |
+| 350. Intersection of Two Arrays II                          | easy       | Hash Table                     | No   |                                                                                                                                          |
+|  1086. High Five | easy | Hash Table、Sort | No | | 
 
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
@@ -71,6 +75,7 @@ bookCollapseSection: true
 | 41. First Missing Positive | Hard       | HashTable, Array | YES   | 注意 while 循环是如何交换元素的，以及 while 循环为什么不能用 if 语句代替 |
 | 54. Spiral Matrix          | medium     |                  | Array | YES                                                                      | 注意这里的终止条件判断 |
 | 73. Set Matrix Zeroes      | medium     | 记忆化方法       | YES   | 注意这里是如何复用原数组以及采用的记忆化方法                             |
+| 1480. Running Sum of 1d Array | easy | Array | No | 简单题，不用再多看了 |
 
 ## Search
 
@@ -104,9 +109,10 @@ bookCollapseSection: true
 | 1342. Number of Steps to Reduce a Number to Zero | easy       | Bit manipulation | No   | 太简单了，不用再看         |
 
 ### Math Computation
-| Problem             | Difficulty | Method | Redo | Comment          |
-| :------------------ | :--------- | :----- | :--- | :--------------- |
-| 268. Missing Number | easy       | Math   | No   | 简单题，直接略过 |
+| Problem             | Difficulty | Method | Redo | Comment                                            |
+| :------------------ | :--------- | :----- | :--- | :------------------------------------------------- |
+| 268. Missing Number | easy       | Math   | No   | 简单题，直接略过                                   |
+| 263. Ugly Number    | easy       | Math   | YES  | 这里还是需要稍微注意一下n 的范围是怎么一步步缩小的 |
 ## Dynamic Programming
 
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
@@ -116,16 +122,16 @@ bookCollapseSection: true
 | 354. Russian Doll Envelopes | hard       | DP        | YES  | 注意这里更最长递增子序列问题的相似性       |
 
 ## Sort
-| Problem                        | Difficulty | Method                   | Redo | Comment                                                                          |
-| :----------------------------- | :--------- | :----------------------- | :--- | :------------------------------------------------------------------------------- |
-| 21. Merge Two Sorted List      | medium     | Merge Sort               | No   |                                                                                  |
-| 148. Sort List                 | medium     | Merge Sort               | YES  | 注意这里的自底向上方法；以及自顶向下方法中，要注意断开 middle 和它之前节点的连接 |
-| 56. Merge Intervals            | medium     | Sort                     | YES  |                                                                                  |
-| 179. Largest Number            | Medium     | Sort                     | YES  | 这里的做法需要十分注意，一般可能注意不到                                         |
-| 75. Sort Colors                | medium     | Bubble Sort、 Count Sort | No   |                                                                                  |
-| 215. Kth Largest Element       | medium     | Heap、Quick Select       | YES  | 这里要非常注意快速选择算法                                                       |
-| 4. Median of Two Sorted Arrays | hard       | Heap                     | YES  | 这个题太难了                                                                     |
-| 973. K Closest Points to Origin | medium | Sort、 Heap | No | 要看到本质问题，然后解决本质问题。 |
+| Problem                         | Difficulty | Method                   | Redo | Comment                                                                          |
+| :------------------------------ | :--------- | :----------------------- | :--- | :------------------------------------------------------------------------------- |
+| 21. Merge Two Sorted List       | medium     | Merge Sort               | No   |                                                                                  |
+| 148. Sort List                  | medium     | Merge Sort               | YES  | 注意这里的自底向上方法；以及自顶向下方法中，要注意断开 middle 和它之前节点的连接 |
+| 56. Merge Intervals             | medium     | Sort                     | YES  |                                                                                  |
+| 179. Largest Number             | Medium     | Sort                     | YES  | 这里的做法需要十分注意，一般可能注意不到                                         |
+| 75. Sort Colors                 | medium     | Bubble Sort、 Count Sort | No   |                                                                                  |
+| 215. Kth Largest Element        | medium     | Heap、Quick Select       | YES  | 这里要非常注意快速选择算法                                                       |
+| 4. Median of Two Sorted Arrays  | hard       | Heap                     | YES  | 这个题太难了                                                                     |
+| 973. K Closest Points to Origin | medium     | Sort、 Heap              | No   | 要看到本质问题，然后解决本质问题。                                               |
 
 ## Two Pointers
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
