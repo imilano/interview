@@ -9,6 +9,7 @@ bookCollapseSection: true
 
 ### Stack
 | Problem                | Difficulty | Method    | Redo | Comment |
+| :----------------------------------- | :--------- | :----------------- | :--- | :------------------------------- |
 | 155. Min Stack | easy | Stack、Monotone Stack | No | |
 | 150. Evalute Reverse Polish Notation | medium | Stack | No | 简单题，无需多看  |
 | 224. Basic Calculator | hard | Stack | YES | 题目为难题，暂时跳过。注意这里是如何将中缀表达式转换为后缀表达式的 | 
@@ -18,6 +19,12 @@ bookCollapseSection: true
 | 1047. Remove All Adjacent Duplicates in String | easy | Stack | No | |
 | 1249. Minimum Remove to Make Valid Parentheses | medium | Stack | Yes | |
 | 735. Asteroid Collision | medium | Stack | Yes | |
+
+### Heap
+| Problem      | Difficulty | Method    | Redo | Comment |
+| :--------- | :--------- | :----------------- | :--- | :---------- |
+| 973. K Closest Points to Origin | medium | Sort、 Heap | No | 要看到本质问题，然后解决本质问题。 |
+| 347. Top K Frequent Elements | medium | Sort、 Hash Table、Heap | No | |
 ### Queue
 | Problem                              | Difficulty | Method             | Redo | Comment                          |
 | :----------------------------------- | :--------- | :----------------- | :--- | :------------------------------- |
@@ -118,6 +125,7 @@ bookCollapseSection: true
 | 75. Sort Colors                | medium     | Bubble Sort、 Count Sort | No   |                                                                                  |
 | 215. Kth Largest Element       | medium     | Heap、Quick Select       | YES  | 这里要非常注意快速选择算法                                                       |
 | 4. Median of Two Sorted Arrays | hard       | Heap                     | YES  | 这个题太难了                                                                     |
+| 973. K Closest Points to Origin | medium | Sort、 Heap | No | 要看到本质问题，然后解决本质问题。 |
 
 ## Two Pointers
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
