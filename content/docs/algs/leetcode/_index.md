@@ -8,8 +8,8 @@ bookCollapseSection: true
 ## Data structure
 
 ### Stack
-| Problem                                        | Difficulty | Method                | Redo | Comment                                                            |
-| :--------------------------------------------- | :--------- | :-------------------- | :--- | :----------------------------------------------------------------- |
+| Problem    | Difficulty | Method     | Redo | Comment     |
+| :------ | :--------- | :---------- | :--- | :------ |
 | 155. Min Stack                                 | easy       | Stack、Monotone Stack | No   |                                                                    |
 | 150. Evalute Reverse Polish Notation           | medium     | Stack                 | No   | 简单题，无需多看                                                   |
 | 224. Basic Calculator                          | hard       | Stack                 | YES  | 题目为难题，暂时跳过。注意这里是如何将中缀表达式转换为后缀表达式的 |
@@ -48,6 +48,7 @@ bookCollapseSection: true
 | 349. Intersection of Two Arrays                             | easy       | Hash Table                     | No   |                                                                                                                                          |
 | 350. Intersection of Two Arrays II                          | easy       | Hash Table                     | No   |                                                                                                                                          |
 |  1086. High Five | easy | Hash Table、Sort | No | | 
+| 692. Top K Frequent Words |  medium | Sort、 Hash Table | No  | |
 
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
@@ -76,6 +77,7 @@ bookCollapseSection: true
 | 54. Spiral Matrix          | medium     |                  | Array | YES                                                                      | 注意这里的终止条件判断 |
 | 73. Set Matrix Zeroes      | medium     | 记忆化方法       | YES   | 注意这里是如何复用原数组以及采用的记忆化方法                             |
 | 1480. Running Sum of 1d Array | easy | Array | No | 简单题，不用再多看了 |
+| 867. Transpose Matrix | easy | Array、Matrix | No | 简单题，不需要多看了|
 
 ## Search
 
@@ -132,6 +134,9 @@ bookCollapseSection: true
 | 215. Kth Largest Element        | medium     | Heap、Quick Select       | YES  | 这里要非常注意快速选择算法                                                       |
 | 4. Median of Two Sorted Arrays  | hard       | Heap                     | YES  | 这个题太难了                                                                     |
 | 973. K Closest Points to Origin | medium     | Sort、 Heap              | No   | 要看到本质问题，然后解决本质问题。                                               |
+| 88. Merge Sorted Array | easy | Sort、 Merge Sort | No | |
+| 692. Top K Frequent Words |  medium | Sort、 Hash Table | No  | |
+
 
 ## Two Pointers
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
