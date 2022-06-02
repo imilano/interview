@@ -26,7 +26,8 @@ bookCollapseSection: true
 | 973. K Closest Points to Origin | medium     | Sort、 Heap             | No   | 要看到本质问题，然后解决本质问题。 |
 | 347. Top K Frequent Elements    | medium     | Sort、 Hash Table、Heap | No   |                                    |
 | 23. Merge K Sorted Lists        | medium     | Sort、 Heap             | No   |                                    |
-| 318. Kth Smallest Element in a Sorted Matrix | medium | Heap、Max Heap | YES | 这个题一开始没有想到堆的解法，还是需要注意一下 |
+| 378. Kth Smallest Element in a Sorted Matrix | medium | Heap、Max Heap | YES | 这个题一开始没有想到堆的解法，还是需要注意一下 |
+| 767. Reorganize String | medium | Heap、Sort | YES | 这里的解法还是比较巧妙的，需要多注意一下 | 
 
 ### Queue
 | Problem                              | Difficulty | Method             | Redo | Comment                          |
