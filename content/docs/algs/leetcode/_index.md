@@ -124,7 +124,12 @@ bookCollapseSection: true
 | 42. Traping Rain Water      | medium     | DP, Stack | YES  |                                            |
 | 474. Ones and Zeroes        | medium     | DP        | YES  | 这里的递推式还是想不太出来，注意遍历的方向 |
 | 354. Russian Doll Envelopes | hard       | DP        | YES  | 注意这里更最长递增子序列问题的相似性       |
+| 303. Range Sum Query - Immutable | easy | DP、Prefix Sum | YES | 注意这里前缀和的解法|
 
+## Prefix Sum
+| Problem                     | Difficulty | Method    | Redo | Comment                                    |
+| :-------------------------- | :--------- | :-------- | :--- | :----------------------------------------- |
+| 303. Range Sum Query - Immutable | easy | DP、Prefix Sum | YES | 注意这里前缀和的解法|
 ## Sort
 | Problem                         | Difficulty | Method                   | Redo | Comment                                                                          |
 | :------------------------------ | :--------- | :----------------------- | :--- | :------------------------------------------------------------------------------- |
