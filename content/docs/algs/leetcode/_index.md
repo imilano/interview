@@ -151,3 +151,7 @@ bookCollapseSection: true
 | 876. Middle of the Linked List | easy       | Two Pointer | No   | 注意这里 for 循环结束遍历的终止条件 |
 | 27. Remove Elements            | easy       | Two Pointer | No   |                                     |
 
+## Backtrace
+| Problem                        | Difficulty | Method      | Redo | Comment                             |
+| :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
+| 51. N-Queens | hard | Backtrace | YES | 惭愧，这个经典的问题自己已经忘了它的解法了 |
