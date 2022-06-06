@@ -131,6 +131,8 @@ bookCollapseSection: true
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
 | :-------------------------- | :--------- | :-------- | :--- | :----------------------------------------- |
 | 303. Range Sum Query - Immutable | easy | DP、Prefix Sum | YES | 注意这里前缀和的解法|
+| 304. Range Sum Query 2D - Immutable | medium | DP、Prefix Sum | YES | 注意这里的坐标变换是如何进行的 |
+| 560. Subarray Sum Equals K | medium | Prefix Sum | No | 主要会前缀和的技巧，那么这里就不是很难 |
 ## Sort
 | Problem                         | Difficulty | Method                   | Redo | Comment                                                                          |
 | :------------------------------ | :--------- | :----------------------- | :--- | :------------------------------------------------------------------------------- |
