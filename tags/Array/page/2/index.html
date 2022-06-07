@@ -11,7 +11,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <label for=section-2135572cc1c37157e360bfb0e28edc10 class="flex justify-between"><a href=/docs/algs/others/>Others</a></label><ul><li><a href=/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/>等概率返回数组中 k 个元素</a></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/alex-shpak/hugo-book target=_blank rel=noopener>Github</a></li><li><a href=https://themes.gohugo.io/hugo-book/ target=_blank rel=noopener>Hugo Themes</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Array</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
-<span>11</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
@@ -23,6 +23,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
 <span>16</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Insert-Sort/>Insert Sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/K-Pointer/>K Pointer</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
@@ -30,7 +31,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Prefix-Sum/>Prefix Sum</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
@@ -38,15 +39,19 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
+<span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
 <span>9</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
-<span>7</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/1480_running_sum_of_1d_array/>1480. Running Sum of 1d Array</a></h2><div><a href=/tags/Array/>Array</a></div><p>Description # Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+<span>7</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/867_transpose_matrix/>0867. Transpose Matrix</a></h2><div><a href=/tags/Matrix/>Matrix</a>,
+<a href=/tags/Array/>Array</a></div><p>Description # Given a 2D integer array matrix, return the transpose of matrix.
+The transpose of a matrix is the matrix flipped over its main diagonal, switching the matrix&rsquo;s row and column indices.
+Solutions # 简言之就是需要行列倒置。
+func transpose(matrix [][]int) [][]int { m,n := len(matrix),len(matrix[0]) res := make([][]int, n) for idx, _ := range res { res[idx] = make([]int, m) } for i := 0; i &lt; m; i++ { for j := 0; j &lt; n; j++ { res[j][i] = matrix[i][j] } } return res }</p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/1480_running_sum_of_1d_array/>1480. Running Sum of 1d Array</a></h2><div><a href=/tags/Array/>Array</a></div><p>Description # Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 Return the running sum of nums.
 Solutions # 简单题，直接看代码就好了。
 func runningSum(nums []int) []int { var res []int var pre int for _, num := range nums { pre += num res = append(res, pre) } return res }</p></article><ul class="pagination pagination-default"><li class=page-item><a href=/tags/Array/ aria-label=First class=page-link role=button><span aria-hidden=true>&#171;&#171;</span></a></li><li class=page-item><a href=/tags/Array/ aria-label=Previous class=page-link role=button><span aria-hidden=true>&#171;</span></a></li><li class=page-item><a href=/tags/Array/ aria-label="Page 1" class=page-link role=button>1</a></li><li class="page-item active"><a aria-current=page aria-label="Page 2" class=page-link role=button>2</a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Next class=page-link role=button tabindex=-1><span aria-hidden=true>&#187;</span></a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Last class=page-link role=button tabindex=-1><span aria-hidden=true>&#187;&#187;</span></a></li></ul><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
-<span>11</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
@@ -58,6 +63,7 @@ func runningSum(nums []int) []int { var res []int var pre int for _, num := rang
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
 <span>16</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Insert-Sort/>Insert Sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/K-Pointer/>K Pointer</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
@@ -65,7 +71,7 @@ func runningSum(nums []int) []int { var res []int var pre int for _, num := rang
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Prefix-Sum/>Prefix Sum</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
@@ -73,7 +79,7 @@ func runningSum(nums []int) []int { var res []int var pre int for _, num := rang
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
+<span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
 <span>9</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>

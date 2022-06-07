@@ -11,7 +11,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <label for=section-2135572cc1c37157e360bfb0e28edc10 class="flex justify-between"><a href=/docs/algs/others/>Others</a></label><ul><li><a href=/docs/algs/others/2.-%E7%AD%89%E6%A6%82%E7%8E%87%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD-k-%E4%B8%AA%E5%85%83%E7%B4%A0/>等概率返回数组中 k 个元素</a></li></ul></li></ul></li></ul><ul><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/alex-shpak/hugo-book target=_blank rel=noopener>Github</a></li><li><a href=https://themes.gohugo.io/hugo-book/ target=_blank rel=noopener>Hugo Themes</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>DP</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
-<span>11</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
@@ -23,6 +23,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
 <span>16</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Insert-Sort/>Insert Sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/K-Pointer/>K Pointer</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
@@ -30,7 +31,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Prefix-Sum/>Prefix Sum</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
@@ -38,7 +39,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
+<span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
 <span>9</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
@@ -64,7 +65,7 @@ Return the size of the largest subset of strs such that there are at most m 0&rs
 A set x is a subset of a set y if all elements of x are also elements of y.
 Solutions # 这里很难想到要用动态规划吧。假设 dp[i][j] 表示一个能包含 i 个 0 和 j 个 1 的子集中的字符串个数。则当扫描到字符串str[i]时，统计其中出现0 位 zeros，1 为 ones。则 \(dp[i][j] = max(dp[i][j], dp[i-zeros][j-ones]+1)\) 。
 <a href=/docs/algs/leetcode/474_ones_and_zeroes/>...</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
-<span>11</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
+<span>12</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
@@ -76,6 +77,7 @@ Solutions # 这里很难想到要用动态规划吧。假设 dp[i][j] 表示一�
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Hash-Table/>Hash Table</a>
 <span>16</span></li><li class="flex justify-between"><a href=/tags/Heap/>Heap</a>
 <span>6</span></li><li class="flex justify-between"><a href=/tags/heap-sort/>heap sort</a>
+<span>1</span></li><li class="flex justify-between"><a href=/tags/Insert-Sort/>Insert Sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/K-Pointer/>K Pointer</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Linked-List/>Linked List</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/LinkedList/>LinkedList</a>
@@ -83,7 +85,7 @@ Solutions # 这里很难想到要用动态规划吧。假设 dp[i][j] 表示一�
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Matrix/>Matrix</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Memorial/>Memorial</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
-<span>3</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
+<span>4</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Prefix-Sum/>Prefix Sum</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
@@ -91,7 +93,7 @@ Solutions # 这里很难想到要用动态规划吧。假设 dp[i][j] 表示一�
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
-<span>9</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
+<span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
 <span>9</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
