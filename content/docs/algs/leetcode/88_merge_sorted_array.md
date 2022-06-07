@@ -1,6 +1,12 @@
 ---
 title: 0088. Merge Sorted Array
 weight: 10
+tags: [
+    "Merge Sort",
+    "Sort",
+    "Insert Sort",
+    "Array"
+]
 ---
 
 ## Description
