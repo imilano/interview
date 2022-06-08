@@ -69,6 +69,7 @@ bookCollapseSection: true
 | 28. Implement strStr                 | easy       | None       | No   |                                                       |
 | 44. Wildcard Matching                | hard       | Recusive   | No   |                                                       |
 | 318. Maximum Product of Word Lengths | medium     | Hash Table | Yes  | 这里的解法很精妙，使用了一个 int 来做记录，提升了性能 |
+| 1332. Remove Palindromic Subsequences | easy | String、Palindrome | YES | 这里是一个脑筋急转弯 |
 
 
 ### Array
