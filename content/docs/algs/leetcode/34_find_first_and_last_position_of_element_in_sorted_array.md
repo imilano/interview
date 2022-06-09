@@ -58,3 +58,42 @@ func searchRange(nums []int, target int) []int {
     return res
 }
 ```
+
+在最坏情况下，比如数组中所有数字均相同，则时间复杂度会退化为 {{< katex >}} \Omircon(n) {{< /katex >}}。下面是优化之后的解法。
+```go
+func searchRange(nums []int, target int) []int {
+    res := []int{-1, -1}
+    size := len(nums)
+    left, right := 0, size -1
+
+    // find left position first
+    for left < right {
+        mid := (left+right)/2
+        if nums[mid] < target {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    if left >= size || nums[left] != target {
+        return res
+    }
+
+    // find right positon
+    res[0] = left
+    right = size
+    for left < right  {
+        mid  := (left + right)/2
+        if nums[mid] <= target {
+            left = mid + 1
+        } else {
+            right = mid 
+        }
+    }
+
+    res[1] = right-1
+    return res
+}
+
+```
