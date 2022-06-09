@@ -81,6 +81,7 @@ bookCollapseSection: true
 | 73. Set Matrix Zeroes      | medium     | 记忆化方法       | YES   | 注意这里是如何复用原数组以及采用的记忆化方法                             |
 | 1480. Running Sum of 1d Array | easy | Array | No | 简单题，不用再多看了 |
 | 867. Transpose Matrix | easy | Array、Matrix | No | 简单题，不需要多看了|
+| 167. Two Sum II - Input Array Is Sorted | medium | Array、Two Pointer | No | 简单题，无需多看|
 
 ## Search
 
