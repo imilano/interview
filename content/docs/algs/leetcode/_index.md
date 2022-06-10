@@ -162,3 +162,8 @@ bookCollapseSection: true
 | :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
 | 51. N-Queens | hard | Backtrace | YES | 惭愧，这个经典的问题自己已经忘了它的解法了 |
 | 52. N-Queues II | hard | Backtrace | YES | 这个题跟 51 题的解法是完全一致的。51 题中因为是从上到下对每一行进行的回溯，所以已经做了一个去重的操作|
+
+## Sliding Window
+| Problem                        | Difficulty | Method      | Redo | Comment                             |
+| :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
+| 3. Longest Substring Without Repeating Character | medium | sliding window、Hash Table、String | YES | 注意这李滑动窗口中左边界的确定，以及|
