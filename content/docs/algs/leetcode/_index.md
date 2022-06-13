@@ -129,6 +129,7 @@ bookCollapseSection: true
 | 354. Russian Doll Envelopes | hard       | DP        | YES  | 注意这里更最长递增子序列问题的相似性       |
 | 303. Range Sum Query - Immutable | easy | DP、Prefix Sum | YES | 注意这里前缀和的解法|
 | 304. Range Sum Query 2D - Immutable | medium | DP、Prefix Sum | YES | 注意这里的坐标变换是如何进行的 |
+| 120. Triangle | medium | DP | YES | 注意这里 DP 方法中复用原数组的技巧 |
 
 ## Prefix Sum
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
