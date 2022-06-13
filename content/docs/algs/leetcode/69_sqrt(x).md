@@ -1,6 +1,10 @@
 ---
 title: 0069. Sqrt(x)
 weight: 10
+tags: [
+    "Binary Search",
+    "Math"
+]
 ---
 
 ## Description

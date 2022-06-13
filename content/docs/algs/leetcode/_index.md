@@ -130,7 +130,7 @@ bookCollapseSection: true
 | 303. Range Sum Query - Immutable | easy | DP、Prefix Sum | YES | 注意这里前缀和的解法|
 | 304. Range Sum Query 2D - Immutable | medium | DP、Prefix Sum | YES | 注意这里的坐标变换是如何进行的 |
 | 120. Triangle | medium | DP | YES | 注意这里 DP 方法中复用原数组的技巧 |
-
+| 64. Minimum Path Sum | medium |DP | YES | 这个题跟 120 题的解法几乎完全一致 ，注意这里使用到的套路 | 
 ## Prefix Sum
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
 | :-------------------------- | :--------- | :-------- | :--- | :----------------------------------------- |

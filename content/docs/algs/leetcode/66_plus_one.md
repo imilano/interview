@@ -1,6 +1,10 @@
 ---
 title: 0066. Plus One
 weight: 10
+tags: [
+    "String",
+    "Math"
+]
 ---
 ## Description
 

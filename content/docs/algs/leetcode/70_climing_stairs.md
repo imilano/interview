@@ -1,6 +1,10 @@
 ---
 title: 0070. Climbing Stairs
 weight: 10
+tags: [
+    "DP",
+    "Math"
+]
 ---
 
 ## Descriptioin

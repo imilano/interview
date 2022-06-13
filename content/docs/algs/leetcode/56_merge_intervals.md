@@ -1,6 +1,10 @@
 ---
 title: 0056. Merge Intervals
 weight: 10
+tags: [
+    "Interval Merge",
+    "Array"
+]
 ---
 ## Description
 
