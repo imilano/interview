@@ -93,6 +93,7 @@ bookCollapseSection: true
 | 33. Search in Rotated Sorted Array                          | medium     | binary search | YES  | |
 | 34. Find First and Last Position of Element in Sorted Array | medium     | binary search | YES   | 注意这里的第二种解法，也就是二分查找中如何确定边界的问题 |
 | 162. Find Peak Element | medium | Binary search、Monotone Stack、Array | YES | 这里二分的解法还是太 tricky 了 |
+| 278. First Bad Version | easy | Binary Search | No | 简单题，直接过|
 
 
 
