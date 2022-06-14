@@ -1,5 +1,5 @@
 <!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Stack"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/tags/Stack/"><title>Stack | Interview</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.5115759f4df6cf4266248698a14030a6df35a85116975cc7c618029d0a0e88fc.js integrity="sha256-URV1n032z0JmJIaYoUAwpt81qFEWl1zHxhgCnQoOiPw=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.e1f2cd3d3dc70d557138d3dcc68af06b63fec9b0da70ce470ab247c3a78ba56b.js integrity="sha256-4fLNPT3HDVVxONPcxorwa2P+ybDacM5HCrJHw6eLpWs=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://example.com/tags/Stack/index.xml title=Interview></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Interview</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
@@ -34,7 +34,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
-<span>1</span></li><li class="flex justify-between"><a href=/tags/Palindrome/>Palindrome</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Palindrome/>Palindrome</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Prefix-Sum/>Prefix Sum</a>
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>8</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
@@ -43,7 +43,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Sliding-Window/>Sliding Window</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
-<span>14</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
+<span>15</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
 <span>12</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>9</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/20_valid_parentheses/>0020. Valid Parentheses</a></h2><div><a href=/tags/Stack/>Stack</a></div><p>Description # Given a string s containing just the characters &lsquo;(&rsquo;, &lsquo;)&rsquo;, &lsquo;{&rsquo;, &lsquo;}&rsquo;, &lsquo;[&rsquo; and &lsquo;]&rsquo;, determine if the input string is valid.
@@ -62,7 +62,16 @@ It is guaranteed that the given RPN expression is always valid. That means the e
 <a href=/tags/Monotone-Stack/>Monotone Stack</a></div><p>Desctiption # Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 Implement the MinStack class:
 MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. Solutions # 除了维持一个正常的栈来维持压入的元素之外，还需要维持一个单调递减栈当前的最小数。具体做法是，当压入一个元素的时候，如果单调栈中元素为空，则直接压入元素到单调栈中；如果单调中元素不为空，那么又分为单调栈顶元素比当前压入元素大还是小两种情况，如果栈顶元素比当前压入元素大，那么将当前压入元素压入单调栈；如果栈顶元素比当前压入元素小，那么再次压入栈顶元素。弹出时，除了对正常栈进行弹出之外，还需要对单调栈进行弹出操作。getMin 函数直接返回单调栈顶元素即可。
-<a href=/docs/algs/leetcode/155_min_stack/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/206_reverse_linked_list/>0206. Reverse Linked List</a></h2><div><a href=/tags/LinkedList/>LinkedList</a>,
+<a href=/docs/algs/leetcode/155_min_stack/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/162_find_peak_element/>0162. Find Peak Element</a></h2><div><a href=/tags/Array/>Array</a>,
+<a href=/tags/Search/>Search</a>,
+<a href=/tags/Binary-Search/>Binary Search</a>,
+<a href=/tags/Monotone-Stack/>Monotone Stack</a>,
+<a href=/tags/Stack/>Stack</a></div><p>Description # A peak element is an element that is strictly greater than its neighbors.
+Given an integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.
+You may imagine that nums[-1] = nums[n] = -∞.
+You must write an algorithm that runs in \( Omicron(\log n) \) time.
+Solutions # One Pass Iteration # 这里可以通过一次数组的一次遍历来完成。为了方便，我们可以在头部和尾部分别添加上一个最小值，这样能够减少一些边界值判断。当然，这种方法并不符合题目要求的 \( \Omicron(n\log n) \) 的要求。
+<a href=/docs/algs/leetcode/162_find_peak_element/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/206_reverse_linked_list/>0206. Reverse Linked List</a></h2><div><a href=/tags/LinkedList/>LinkedList</a>,
 <a href=/tags/Stack/>Stack</a>,
 <a href=/tags/Recursive/>Recursive</a></div><p>Description # Given the head of a singly linked list, reverse the list, and return the reversed list.
 Solutions # Iterative # 迭代法，但是要注意虚拟头节点的使用。
@@ -82,11 +91,7 @@ Solutions # 这个题目因为不涉及乘除法，相比第 224 题就简单很
 <a href=/docs/algs/leetcode/227_basic_calculator_ii/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/735_asteroid_collision/>0735. Asteroid Collisiion</a></h2><div><a href=/tags/Stack/>Stack</a></div><p>Description # We are given an array asteroids of integers representing asteroids in a row.
 For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
 Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode.
-<a href=/docs/algs/leetcode/735_asteroid_collision/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/895_max_frequency_stack/>0895. Max Frequency Stack</a></h2><div><a href=/tags/Stack/>Stack</a>,
-<a href=/tags/Hash-Table/>Hash Table</a></div><p>Description # Design a stack-like data structure to push elements to the stack and pop the most frequent element from the stack.
-Implement the FreqStack class:
-FreqStack() constructs an empty frequency stack. void push(int val) pushes an integer val onto the top of the stack. int pop() removes and returns the most frequent element in the stack. If there is a tie for the most frequent element, the element closest to the stack&rsquo;s top is removed and returned.
-<a href=/docs/algs/leetcode/895_max_frequency_stack/>...</a></p></article><ul class="pagination pagination-default"><li class="page-item disabled"><a aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a></li><li class="page-item active"><a aria-current=page aria-label="Page 1" class=page-link role=button>1</a></li><li class=page-item><a href=/tags/Stack/page/2/ aria-label="Page 2" class=page-link role=button>2</a></li><li class=page-item><a href=/tags/Stack/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/tags/Stack/page/2/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
+<a href=/docs/algs/leetcode/735_asteroid_collision/>...</a></p></article><ul class="pagination pagination-default"><li class="page-item disabled"><a aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a></li><li class="page-item active"><a aria-current=page aria-label="Page 1" class=page-link role=button>1</a></li><li class=page-item><a href=/tags/Stack/page/2/ aria-label="Page 2" class=page-link role=button>2</a></li><li class=page-item><a href=/tags/Stack/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/tags/Stack/page/2/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/Array/>Array</a>
 <span>15</span></li><li class="flex justify-between"><a href=/tags/Backtracing/>Backtracing</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
@@ -110,7 +115,7 @@ FreqStack() constructs an empty frequency stack. void push(int val) pushes an in
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Merge-Sort/>Merge Sort</a>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Min-Heap/>Min Heap</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Monotone-Stack/>Monotone Stack</a>
-<span>1</span></li><li class="flex justify-between"><a href=/tags/Palindrome/>Palindrome</a>
+<span>2</span></li><li class="flex justify-between"><a href=/tags/Palindrome/>Palindrome</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Prefix-Sum/>Prefix Sum</a>
 <span>5</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>8</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
@@ -119,7 +124,7 @@ FreqStack() constructs an empty frequency stack. void push(int val) pushes an in
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Sliding-Window/>Sliding Window</a>
 <span>3</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
-<span>14</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
+<span>15</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
 <span>12</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
 <span>9</span></li></ul></li></ul></nav></div></aside></main></body></html>
