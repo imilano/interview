@@ -95,6 +95,8 @@ bookCollapseSection: true
 | 162. Find Peak Element | medium | Binary search、Monotone Stack、Array | YES | 这里二分的解法还是太 tricky 了 |
 | 278. First Bad Version | easy | Binary Search | No | 简单题，直接过|
 | 74. Search a 2D Matrix | medium | Binary Search、Matrix | YES | 这题的二分解法很巧妙 |
+| 240. Search a 2D Matrix II | medium | Binary Search、Matrix | YES | 这个题的解法跟 74 题完全一致 |
+| 540. Single Element in a Sorted Array | medium | Binary Search、Array | YES | 这里的隐式二分真的太巧妙了，需要注意一下 | 
 
 
 
@@ -135,6 +137,7 @@ bookCollapseSection: true
 | 120. Triangle | medium | DP | YES | 注意这里 DP 方法中复用原数组的技巧 |
 | 64. Minimum Path Sum | medium |DP | YES | 这个题跟 120 题的解法几乎完全一致 ，注意这里使用到的套路 | 
 | 583. Delete Operations for Two Strings | medium | DP | YES | |
+| 1048. Longest String Chain | medium | DP | YES | |
 ## Prefix Sum
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
 | :-------------------------- | :--------- | :-------- | :--- | :----------------------------------------- |
