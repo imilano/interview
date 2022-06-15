@@ -97,6 +97,8 @@ bookCollapseSection: true
 | 74. Search a 2D Matrix | medium | Binary Search、Matrix | YES | 这题的二分解法很巧妙 |
 | 240. Search a 2D Matrix II | medium | Binary Search、Matrix | YES | 这个题的解法跟 74 题完全一致 |
 | 540. Single Element in a Sorted Array | medium | Binary Search、Array | YES | 这里的隐式二分真的太巧妙了，需要注意一下 | 
+| 69. Sqrt(x) | easy | Binary Search | YES | 注意这里的边界是如何区分的；开头去掉一些 corner case的话，会让主逻辑更清晰一些  |
+| 367. Valid Perfect Square | easy | Binary Search | YES | 注意这里的边界是如何区分的，以及这里与 69 题的相似性 |
 
 
 
