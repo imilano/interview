@@ -2,7 +2,8 @@
 title: 0232. Implement Queue using Stacks
 weight: 10
 tags: [
-	"Queue"
+	"Queue",
+	"Stack"
 ]
 ---
 ## Description
