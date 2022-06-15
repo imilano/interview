@@ -18,7 +18,8 @@ tags: [
 
 ## Solutions
 
-使用二分法快速进行快速查找：
+### Binary Search
+使用二分法进行快速查找。开头就去除掉一些 corner case 的话，后面整体逻辑写起来就会更加的清晰。
 ```go
 func mySqrt(x int) int {
     if x <= 1 {
@@ -37,7 +38,7 @@ func mySqrt(x int) int {
         }
     }
     
-    
+    // 注意这里为什么返回的是 high - 1
     return high - 1
 }
 ```
