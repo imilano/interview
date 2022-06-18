@@ -138,8 +138,10 @@ bookCollapseSection: true
 | 304. Range Sum Query 2D - Immutable | medium | DP、Prefix Sum | YES | 注意这里的坐标变换是如何进行的 |
 | 120. Triangle | medium | DP | YES | 注意这里 DP 方法中复用原数组的技巧 |
 | 64. Minimum Path Sum | medium |DP | YES | 这个题跟 120 题的解法几乎完全一致 ，注意这里使用到的套路 | 
-| 583. Delete Operations for Two Strings | medium | DP | YES | |
+| 583. Delete Operations for Two Strings | medium | DP | YES | 这题的 DP 解法跟 1143 题是完全一致的，都是求解最长公共子序列 |
 | 1048. Longest String Chain | medium | DP | YES | |
+| 5. Longest Palindrome Substring | medium | DP | YES | 要注意这里的 DP 解法；另外，单个字符串的最长的公共串/序列问题，尝试看看能不能转换为两个字符串的公共子串/序列问题 |
+| 718. Maximum Length of Repeated Subarray | medium | DP | YES | 注意如何将这里的解法用到第5 题中 |
 ## Prefix Sum
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
 | :-------------------------- | :--------- | :-------- | :--- | :----------------------------------------- |
@@ -180,3 +182,8 @@ bookCollapseSection: true
 | 3. Longest Substring Without Repeating Character | medium | sliding window、Hash Table、String | YES | 注意这里滑动窗口中左边界的确定，以及左边界 left 的初值和移动方向|
 | 1658. Minimum Operations to Reduce X to Zero | medium | Sliding window、Prefix Sum、Backtrace | YES | 首先要注意这里是怎么逐步对前缀和方法进行优化的；其次要注意这里的滑动窗口解法，也算是滑动窗口中的一中 pattern 了|
 | 1695. Maximum Erasure Value | medium | Sliding Window、 Hash Table | YES | 这里其实跟第 3 题是一样的 | 
+
+## Greedy Algorithms
+| Problem                        | Difficulty | Method      | Redo | Comment                             |
+| :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
+| 968. Binary Tree Cameras | hard | greedy algorithm | YES | 这里其实就有点像是一个递归再配合上状态机的转移 |
