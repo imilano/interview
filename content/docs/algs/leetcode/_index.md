@@ -100,6 +100,7 @@ bookCollapseSection: true
 | 540. Single Element in a Sorted Array | medium | Binary Search、Array | YES | 这里的隐式二分真的太巧妙了，需要注意一下 | 
 | 69. Sqrt(x) | easy | Binary Search | YES | 注意这里的边界是如何区分的；开头去掉一些 corner case的话，会让主逻辑更清晰一些  |
 | 367. Valid Perfect Square | easy | Binary Search | YES | 注意这里的边界是如何区分的，以及这里与 69 题的相似性 |
+| 528. Random Pick with Weight | medium | Binary Search | YES | 这里首先需要注意的是随机数的选择方法；其次需要注意的是，sum 数组的下标需要与原数组下标匹配（针对本题答案而言） |
 
 
 
