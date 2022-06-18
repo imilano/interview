@@ -54,7 +54,7 @@ func longestPalindromeHelper(s string, left, right, size int) string {
 // 方法 2，如果将这个字符串逆转，那么求最长回文串就会变成求两个字符串的最长公共子串
 // 方法 3： 动态规划
 // 使用一个二维数组 dp[i][j]表示字符串 i 到 j 是否为回文串，则有：
-// 	dp[i][j] = 1 if i == j
+// 	dp[i][j] = true if i == j
 // 	dp[i][j] = s[i] == s[j]  if j-i == 1
 // 	dp[i][j] = dp[i+1][j-1] && s[i] == s[j] if j - i > 1
 func longestPalindromeSolution3(s string) string {
