@@ -183,6 +183,7 @@ bookCollapseSection: true
 | 3. Longest Substring Without Repeating Character | medium | sliding window、Hash Table、String | YES | 注意这里滑动窗口中左边界的确定，以及左边界 left 的初值和移动方向|
 | 1658. Minimum Operations to Reduce X to Zero | medium | Sliding window、Prefix Sum、Backtrace | YES | 首先要注意这里是怎么逐步对前缀和方法进行优化的；其次要注意这里的滑动窗口解法，也算是滑动窗口中的一中 pattern 了|
 | 1695. Maximum Erasure Value | medium | Sliding Window、 Hash Table | YES | 这里其实跟第 3 题是一样的 | 
+| 643. Maximum Average Subarray I | easy | Sliding Window | YES | 这题没什么难度，但是要注意两个 if 语句的顺序，不能颠倒 |
 
 ## Greedy Algorithms
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
