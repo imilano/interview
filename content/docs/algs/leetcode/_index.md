@@ -124,6 +124,7 @@ bookCollapseSection: true
 | 29. Divide Two Integers                          | medium     | Bit manipulation | YES  |                            |
 | 191. Number of 1 Bits                            | easy       | Bit manipulation | No   | 这题太简单了，没什么好说的 |
 | 1342. Number of Steps to Reduce a Number to Zero | easy       | Bit manipulation | No   | 太简单了，不用再看         |
+| 1060. Missing Number in Sorted Array | easy | Bit manipulation、Math、Binary Search | YES | |
 
 ### Math Computation
 | Problem             | Difficulty | Method | Redo | Comment                                            |
