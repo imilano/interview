@@ -53,6 +53,7 @@ bookCollapseSection: true
 | 692. Top K Frequent Words |  medium | Sort、 Hash Table | No  | |
 | 895. Max Frequency Stack | hard | Hash Table、Stack | YES | 这里的解法很巧妙，需要注意一下 |
 | 745. Prefix and Suffix Search | hard | Hash Table、String | YES | 有时间暴力解法也是没问题的 |
+| 1268. Search Suggestions System | medium | Hash Table、String、Trie Tree | YES | 这里的剪枝算法需要注意一下 |
 
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
