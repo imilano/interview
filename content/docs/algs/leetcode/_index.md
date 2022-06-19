@@ -146,6 +146,7 @@ bookCollapseSection: true
 | 1048. Longest String Chain | medium | DP | YES | |
 | 5. Longest Palindrome Substring | medium | DP | YES | 要注意这里的 DP 解法；另外，单个字符串的最长的公共串/序列问题，尝试看看能不能转换为两个字符串的公共子串/序列问题 |
 | 718. Maximum Length of Repeated Subarray | medium | DP | YES | 注意如何将这里的解法用到第5 题中 |
+| 1062. Longest Repeating Substring | medium | DP | YES | 这个题的递推式跟 718 题完全一致 |
 ## Prefix Sum
 | Problem                     | Difficulty | Method    | Redo | Comment                                    |
 | :-------------------------- | :--------- | :-------- | :--- | :----------------------------------------- |
