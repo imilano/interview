@@ -7,7 +7,14 @@ tags: [
 ]
 ---
 
-
+## Description
+> Implement the RandomizedSet class:
+> 
+> - `RandomizedSet()` Initializes the RandomizedSet object.
+> - `bool insert(int val)` Inserts an item val into the set if not present. Returns true if the item was not present, false otherwise.
+> - `bool remove(int val)` Removes an item val from the set if present. Returns true if the item was present, false otherwise.
+> - `int getRandom()` Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned.
+> You must implement the functions of the class such that each function works in average O(1) time complexity.
 ## Solutions
 ### Hash Table & Array
 这里使用一个 Hash Table 和一个数组，Hash Table 存储的是值和该值在数组中的下标。这里稍微有点 tricky 的是，删除的时候，不是直接在 Hash Table 中删除该元素，而是在数组中将该元素和尾元素调换位置，然后删除尾元素。 这样所有操作都能达到 {{< katex >}} \Omicron(1) {{< /katex >}} 的时间复杂度。
