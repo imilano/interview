@@ -55,6 +55,7 @@ bookCollapseSection: true
 | 745. Prefix and Suffix Search | hard | Hash Table、String | YES | 有时间暴力解法也是没问题的 |
 | 1268. Search Suggestions System | medium | Hash Table、String、Trie Tree | YES | 这里的剪枝算法需要注意一下 |
 | 409. Longest Palindrome | easy | Hash Table、String | YES | 这里的解法，要注意一下 | 
+| 820. Short Encoding of Words | medium | Hash Table、String | YES | 这里的思路比较巧妙 |
 
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
