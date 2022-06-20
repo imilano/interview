@@ -4,7 +4,8 @@ weight: 10
 tags: [
 	"String",
 	"Longest Common Substring",
-	"DP"
+	"DP",
+	"Two Pointer"
 ]
 ---
 ## Description
