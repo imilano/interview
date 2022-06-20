@@ -1,5 +1,5 @@
 <!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Monotone Stack"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/tags/Monotone-Stack/"><title>Monotone Stack | Interview</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.aba2755e86ccecddf3b2bd9800bdb3e9ad73a519aa611276b9d6df9889c7f979.js integrity="sha256-q6J1XobM7N3zsr2YAL2z6a1zpRmqYRJ2udbfmInH+Xk=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.ccc399974abe95772765017c752954e190320144ef2b98bfa9d6fef4342442cb.js integrity="sha256-zMOZl0q+lXcnZQF8dSlU4ZAyAUTvK5i/qdb+9DQkQss=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://example.com/tags/Monotone-Stack/index.xml title=Interview></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Interview</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
@@ -47,10 +47,10 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>16</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>19</span></li><li class="flex justify-between"><a href=/tags/Tree/>Tree</a>
+<span>20</span></li><li class="flex justify-between"><a href=/tags/Tree/>Tree</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
-<span>9</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/155_min_stack/>0155. Min Stack</a></h2><div><a href=/tags/Stack/>Stack</a>,
+<span>10</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/155_min_stack/>0155. Min Stack</a></h2><div><a href=/tags/Stack/>Stack</a>,
 <a href=/tags/Monotone-Stack/>Monotone Stack</a></div><p>Desctiption # Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 Implement the MinStack class:
 MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. Solutions # 除了维持一个正常的栈来维持压入的元素之外，还需要维持一个单调递减栈当前的最小数。具体做法是，当压入一个元素的时候，如果单调栈中元素为空，则直接压入元素到单调栈中；如果单调中元素不为空，那么又分为单调栈顶元素比当前压入元素大还是小两种情况，如果栈顶元素比当前压入元素大，那么将当前压入元素压入单调栈；如果栈顶元素比当前压入元素小，那么再次压入栈顶元素。弹出时，除了对正常栈进行弹出之外，还需要对单调栈进行弹出操作。getMin 函数直接返回单调栈顶元素即可。
@@ -100,7 +100,7 @@ Solutions # One Pass Iteration # 这里可以通过一次数组的一次遍历�
 <span>4</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>10</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
 <span>16</span></li><li class="flex justify-between"><a href=/tags/String/>String</a>
-<span>19</span></li><li class="flex justify-between"><a href=/tags/Tree/>Tree</a>
+<span>20</span></li><li class="flex justify-between"><a href=/tags/Tree/>Tree</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
-<span>9</span></li></ul></li></ul></nav></div></aside></main></body></html>
+<span>10</span></li></ul></li></ul></nav></div></aside></main></body></html>
