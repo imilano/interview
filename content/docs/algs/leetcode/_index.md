@@ -176,6 +176,7 @@ bookCollapseSection: true
 | :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
 | 876. Middle of the Linked List | easy       | Two Pointer | No   | 注意这里 for 循环结束遍历的终止条件 |
 | 27. Remove Elements            | easy       | Two Pointer | No   |                                     |
+| 125. Valid Palindrome | easy | Two Pointer | No | 简单题，直接跳过即可 |
 
 ## Backtrace
 | Problem                        | Difficulty | Method      | Redo | Comment                             |

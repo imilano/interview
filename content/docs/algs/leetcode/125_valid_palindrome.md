@@ -1,6 +1,10 @@
 ---
 title: 0125. Valid Palindrome
 weight: 10
+tags: [
+	"String",
+	"Two Pointer"
+]
 ---
 
 ## Description
@@ -10,35 +14,38 @@ weight: 10
 
 
 ## Solutions
-简单题，去除字符之后直接判断即可。
+### Two Pointer
+简单题，去除非数字字母的字符之后直接判断即可。
 ```go
 func isPalindrome(s string) bool {
-    if len(s) <= 1 {
-		return true
-	}
-	s = strings.ToLower(s)
-	var str []rune
-	for _, r := range s {
-		if r  >= rune('a') && r <= rune('z') || r >= rune('0') && r <= rune('9'){
-			str = append(str, r)
-		}
-	}
-
-	size := len(str)
-	if size <= 1{
-		return true
-	}
-
-	left, right := 0, size -1
-	for left < right {
-		if str[left] != str[right] {
-			return false
-		}
-
-		left++
-		right--
-	}
-
-	return true
+    var rs []rune
+    for _, r := range s {
+        // skip none-alphanumeric characters
+        if !(r >= 'a' && r <= 'z' || r >= 'A' && r <= 'Z' || r >='0' && r <= '9') {
+            continue
+        }
+        
+        // convert upper case to lower case
+        if r >= 'A' && r <= 'Z' {
+            r += 'a' - 'A'
+        }
+        
+        // append to rs
+        rs = append(rs, r)
+    }
+    
+    
+    // check if it is palindromic string
+    left, right := 0, len(rs)-1
+    for left < right {
+        if rs[left] != rs[right] {
+            return false
+        }
+        
+        left++
+        right--
+    }
+    
+    return true
 }
 ```
