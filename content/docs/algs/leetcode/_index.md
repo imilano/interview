@@ -181,7 +181,7 @@ bookCollapseSection: true
 | 125. Valid Palindrome | easy | Two Pointer | No | 简单题，直接跳过即可 |
 | 1. Two Sum | easy | Two Pointer、Hash Table | No | 注意一下这里的哈希表的解法 |
 | 167. Two Sum II | medium | Two Pointer | No | |
-
+| 15. 3Sum | medium | Two Pointer、Hash Table | Yes | 注意这里是如何进行减枝的 |
 ## Backtrace
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
 | :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
