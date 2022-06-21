@@ -28,6 +28,7 @@ bookCollapseSection: true
 | 23. Merge K Sorted Lists        | medium     | Sort、 Heap             | No   |                                    |
 | 378. Kth Smallest Element in a Sorted Matrix | medium | Heap、Max Heap | YES | 这个题一开始没有想到堆的解法，还是需要注意一下 |
 | 767. Reorganize String | medium | Heap、Sort | YES | 这里的解法还是比较巧妙的，需要多注意一下 | 
+| 1642.Furthest Building you can Reach | medium | Heap、Priority Queue | YES | 这里的解法很巧妙，需要注意一下|
 
 ### Queue
 | Problem                              | Difficulty | Method             | Redo | Comment                          |
@@ -38,6 +39,7 @@ bookCollapseSection: true
 | 1429. First Unique Number            | unknown    | Queue、 Hash Table | No   |                                  |
 | 362. Design Hit Counter              | unknown    | Queue              | No   |                                  |
 | 264. Ugly Number II | medium | Queue | YES |第一次做的时候做了一个错误解法，还是要注意丑数是怎么推出来的 |
+| 1642.Furthest Building you can Reach | medium | Heap、Priority Queue | YES | 这里的解法很巧妙，需要注意一下|
 
 ### Hash Table
 | Problem                                                     | Difficulty | Method                         | Redo | Comment                                                                                                                                  |
