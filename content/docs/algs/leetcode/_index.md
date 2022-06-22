@@ -29,6 +29,7 @@ bookCollapseSection: true
 | 378. Kth Smallest Element in a Sorted Matrix | medium | Heap、Max Heap | YES | 这个题一开始没有想到堆的解法，还是需要注意一下 |
 | 767. Reorganize String | medium | Heap、Sort | YES | 这里的解法还是比较巧妙的，需要多注意一下 | 
 | 1642.Furthest Building you can Reach | medium | Heap、Priority Queue | YES | 这里的解法很巧妙，需要注意一下|
+| 215. Kth Largest Element in an Array | medium | Heap、Quick Select | YES | 这里的 Quick Select 算法需要熟练一下 | 
 
 ### Queue
 | Problem                              | Difficulty | Method             | Redo | Comment                          |

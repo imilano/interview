@@ -76,7 +76,7 @@ func (h *MaxHeap) Pop() interface{} {
 }
 ```
 
-### Quick Sort
+### Quick Select
 可以使用快排的 partition 算法。快排的 partition 算法中，选中选择一个基点作为 pivot，然后将小于 pivot 的元素放在 pivot 左边，大于 pivot 的元素放在 pivot 右边，然后返回 pivot 的下标，这样 pivot 左边的元素都比 pivot 小，右边的都比 pivot 大，这样的话就确定了一个元素的位置。那么我们只需要当 pivot = k-1 时候返回即可。
 ```go
 func findKthLargest(nums []int, k int) int {
@@ -121,5 +121,52 @@ func partition(nums []int, left int, right int) int {
     
     nums[left], nums[r] = nums[r], nums[left]
     return r
+}
+```
+
+下面这种写法也可以：
+```go
+func findKthLargest(nums []int, k int) int {
+    sort.Slice(nums, func(i,j int) bool {
+        return nums[i] > nums[j]
+    })
+    
+    return quickSort(nums, 0, len(nums)-1, k-1)
+}
+
+func quickSort(nums []int, left, right, k int) int {
+    if left > right {
+        return -1
+    }
+
+    pivot := quickSelect(nums, left, right)
+    if pivot == k  {
+        return nums[pivot]
+    } else if pivot < k  {
+        return quickSort(nums, pivot+1, right, k)
+    } else {
+        return quickSort(nums, left, pivot-1, k)
+    }
+}
+
+func quickSelect(nums []int, left, right int) int {
+    pivot := left
+    left++
+    for left < right {
+        for left < right && nums[left] >= nums[pivot] {
+            left++
+        }
+        
+        for left < right && nums[right] <= nums[pivot] {
+            right--
+        }
+        
+        if left < right {
+            nums[left], nums[right] = nums[right], nums[left]
+        }
+    }
+    
+    nums[left-1], nums[pivot] = nums[pivot], nums[left-1]
+    return left - 1
 }
 ```
