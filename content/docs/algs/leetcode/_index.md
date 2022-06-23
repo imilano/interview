@@ -184,6 +184,7 @@ bookCollapseSection: true
 | 167. Two Sum II | medium | Two Pointer | No | |
 | 15. 3Sum | medium | Two Pointer、Hash Table | Yes | 注意这里是如何进行减枝的 |
 | 16. 3Sum Closest | medium | Two Pointer | Yes | 注意这里如何进行减枝 |
+| 18. 4Sum | medium | Two Pointer | YES | 注意这里是如何去重的，在最后两个 for 循环中对重复元素去重的技巧要注意一下 |
 ## Backtrace
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
 | :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
