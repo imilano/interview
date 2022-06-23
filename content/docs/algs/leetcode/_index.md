@@ -60,7 +60,12 @@ bookCollapseSection: true
 | 409. Longest Palindrome                                     | easy       | Hash Table、String             | YES  | 这里的解法，要注意一下                                                                                                                   |
 | 820. Short Encoding of Words                                | medium     | Hash Table、String             | YES  | 这里的思路比较巧妙                                                                                                                       |
 | 454. 4Sum II                                                | medium     | Hash Table、Divide             | YES  | 这里降低时间复杂度的思想比较巧妙，值得学习                                                                                               |
+| 277. Find the Celebrity | medium | Hash Table、Graph | YES | 这里的图论思想很值得思考 |
 
+### Graph
+| Problem                                                     | Difficulty | Method                         | Redo | Comment                                                                                                                                  |
+| :--------------- | :--------- | :-------- | :--- | :------ |
+| 277. Find the Celebrity | medium | Hash Table、Graph | YES | 这里的图论思想很值得思考 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
