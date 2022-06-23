@@ -203,3 +203,4 @@ bookCollapseSection: true
 | Problem                        | Difficulty | Method      | Redo | Comment                             |
 | :----------------------------- | :--------- | :---------- | :--- | :---------------------------------- |
 | 968. Binary Tree Cameras | hard | greedy algorithm | YES | 这里其实就有点像是一个递归再配合上状态机的转移 |
+| 630. Course Schedule III | hard | Greedy algorithm | YES | 这里的关键其实还是在于最大堆与贪心算法的结合 |
