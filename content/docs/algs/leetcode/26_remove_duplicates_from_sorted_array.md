@@ -2,7 +2,8 @@
 title: 0026. remove duplicated from sorted array
 weight: 10
 tags: [
-    "Array"
+    "Array",
+    "Two Pointer"
 ]
 ---
 
