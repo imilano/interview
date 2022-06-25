@@ -1,5 +1,5 @@
 <!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="DP"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/tags/DP/"><title>DP | Interview</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.975b9f5ba3f602c4bea69dbd8047b16936cbb292324374ed89c1f68fc440996d.js integrity="sha256-l1ufW6P2AsS+pp29gEexaTbLspIyQ3TticH2j8RAmW0=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.4ff1f09e7053cf1ce15465fee70ad8cb047f5a352d0eac19e7fb2d5502e3f437.js integrity="sha256-T/HwnnBTzxzhVGX+5wrYywR/WjUtDqwZ5/stVQLj9Dc=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://example.com/tags/DP/index.xml title=Interview></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Interview</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
@@ -54,7 +54,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>21</span></li><li class="flex justify-between"><a href=/tags/Tree/>Tree</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
-<span>17</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/583_delete_operation_for_two_strings/>0583. Delete Operations for Two Strings</a></h2><div><a href=/tags/String/>String</a>,
+<span>18</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/583_delete_operation_for_two_strings/>0583. Delete Operations for Two Strings</a></h2><div><a href=/tags/String/>String</a>,
 <a href=/tags/DP/>DP</a></div><p>Description # Given two strings word1 and word2, return the minimum number of steps required to make word1 and word2 the same.
 In one step, you can delete exactly one character in either string.
 Solutions # DP # 求最少的删除步数来使两个字符串一致，其实就是求两个字符串的最长公共子序列（注意，子序列意味着可以不连续），最少的步数就是二者的长度之和减去最长公共子序列的两倍。所以问题就是如何求两个字符串的最长公共子序列。定义 dp[i][j] 表示 str1（假设长度为m）的前i个字符和str2（假设长度为n）的前j个字符的最长公共子序列的长度，根据这个定义，我们最求所求的值就是dp[m][n]，那么我们应该申请的数组就是 (m+1) * (n+1)的二维数组。
@@ -111,4 +111,4 @@ func longestRepeatingSubstring(s string) int { res,size := math.MinInt, len(s) d
 <span>21</span></li><li class="flex justify-between"><a href=/tags/Tree/>Tree</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/two-poiner/>two poiner</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Two-Pointer/>Two Pointer</a>
-<span>17</span></li></ul></li></ul></nav></div></aside></main></body></html>
+<span>18</span></li></ul></li></ul></nav></div></aside></main></body></html>
