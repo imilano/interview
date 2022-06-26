@@ -165,6 +165,7 @@ bookCollapseSection: true
 | 304. Range Sum Query 2D - Immutable | medium     | DP、Prefix Sum | YES  | 注意这里的坐标变换是如何进行的         |
 | 560. Subarray Sum Equals K          | medium     | Prefix Sum     | No   | 主要会前缀和的技巧，那么这里就不是很难 |
 | 307. Range Query Sum - Mutable      | medium     | Prefix Sum     | No   |                                        |
+| 1423. Maximum Points You Can Obrain from Cards | medium | Prefix Sum、DP | YES | 注意这个题怎么转换为前缀和来做，并且要注意 res 的初始值 |
 ## Sort
 | Problem                         | Difficulty | Method                   | Redo | Comment                                                                          |
 | :------------------------------ | :--------- | :----------------------- | :--- | :------------------------------------------------------------------------------- |
