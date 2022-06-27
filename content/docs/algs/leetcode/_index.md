@@ -84,6 +84,7 @@ bookCollapseSection: true
 | 44. Wildcard Matching                 | hard       | Recusive           | No   |                                                       |
 | 318. Maximum Product of Word Lengths  | medium     | Hash Table         | Yes  | 这里的解法很精妙，使用了一个 int 来做记录，提升了性能 |
 | 1332. Remove Palindromic Subsequences | easy       | String、Palindrome | YES  | 这里是一个脑筋急转弯                                  |
+| 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers | medium | String、 Math | YES | 这里的解法很巧妙，如果没有答案里的特殊方法，肯定是很难解出来的 |
 
 
 ### Array
@@ -195,6 +196,7 @@ bookCollapseSection: true
 | 11. Container with Most Water | medium | Yes | 这里移动指针的方式有一点贪心的味道 |
 | 283. Moving Zeroes | easy | Two Pointer | No | |
 | 26. Remove Duplicates from Sorted Array | easy | Two Pointer | No | |
+| 395. Longest Substring with At Least K Repeating Characters | medium | Two Pointer | YES | 这个题暂时跳过一下 |
 ## Backtrace
 | Problem         | Difficulty | Method    | Redo | Comment                                                                                               |
 | :-------------- | :--------- | :-------- | :--- | :---------------------------------------------------------------------------------------------------- |
