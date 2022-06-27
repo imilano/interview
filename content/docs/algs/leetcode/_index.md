@@ -197,6 +197,7 @@ bookCollapseSection: true
 | 283. Moving Zeroes | easy | Two Pointer | No | |
 | 26. Remove Duplicates from Sorted Array | easy | Two Pointer | No | |
 | 395. Longest Substring with At Least K Repeating Characters | medium | Two Pointer | YES | 这个题暂时跳过一下 |
+| 424. Longest Repeating Character Replacement | medium | Two Pointer、 Sliding Window | YES | 这里的滑动窗口/双指针的解法是非常巧妙的，值得好好学习 ，尤其是怎么来做类推，来把问题细化 |
 ## Backtrace
 | Problem         | Difficulty | Method    | Redo | Comment                                                                                               |
 | :-------------- | :--------- | :-------- | :--- | :---------------------------------------------------------------------------------------------------- |
@@ -210,6 +211,7 @@ bookCollapseSection: true
 | 1658. Minimum Operations to Reduce X to Zero     | medium     | Sliding window、Prefix Sum、Backtrace | YES  | 首先要注意这里是怎么逐步对前缀和方法进行优化的；其次要注意这里的滑动窗口解法，也算是滑动窗口中的一中 pattern 了 |
 | 1695. Maximum Erasure Value                      | medium     | Sliding Window、 Hash Table           | YES  | 这里其实跟第 3 题是一样的                                                                                       |
 | 643. Maximum Average Subarray I                  | easy       | Sliding Window                        | YES  | 这题没什么难度，但是要注意两个 if 语句的顺序，不能颠倒                                                          |
+| 424. Longest Repeating Character Replacement | medium | Two Pointer、 Sliding Window | YES | 这里的滑动窗口/双指针的解法是非常巧妙的，值得好好学习 ，尤其是怎么来做类推，来把问题细化 |
 
 ## Greedy Algorithms
 | Problem                  | Difficulty | Method           | Redo | Comment                                        |
