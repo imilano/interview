@@ -180,6 +180,7 @@ bookCollapseSection: true
 | 973. K Closest Points to Origin | medium     | Sort、 Heap              | No   | 要看到本质问题，然后解决本质问题。                                               |
 | 88. Merge Sorted Array          | easy       | Sort、 Merge Sort        | No   |                                                                                  |
 | 692. Top K Frequent Words       | medium     | Sort、 Hash Table        | No   |                                                                                  |
+| 1647. Minimum Deletions to Make Character Frequencies Unique | medium | Greedy algorithm、Sort | YES | 这里的贪心会比价隐晦一些 |
 
 
 ## Two Pointers
@@ -219,6 +220,7 @@ bookCollapseSection: true
 | 968. Binary Tree Cameras | hard       | greedy algorithm | YES  | 这里其实就有点像是一个递归再配合上状态机的转移 |
 | 630. Course Schedule III | hard       | Greedy algorithm | YES  | 这里的关键其实还是在于最大堆与贪心算法的结合   |
 | 665. Non-decreasing Array | medium | Greedy algorithm | YES | 这里的贪心有些隐晦，不易发现 |
+| 1647. Minimum Deletions to Make Character Frequencies Unique | medium | Greedy algorithm、Sort | YES | 这里的贪心会比价隐晦一些 |
 
 ## Divide and Conquer
 | Problem      | Difficulty | Method             | Redo | Comment                                    |
