@@ -216,6 +216,8 @@ bookCollapseSection: true
 | 643. Maximum Average Subarray I                  | easy       | Sliding Window                        | YES  | 这题没什么难度，但是要注意两个 if 语句的顺序，不能颠倒                                                          |
 | 424. Longest Repeating Character Replacement | medium | Two Pointer、 Sliding Window | YES | 这里的滑动窗口/双指针的解法是非常巧妙的，值得好好学习 ，尤其是怎么来做类推，来把问题细化 |
 | 76. Minimum Window Substring | hard | Sliding Window、Two Pointer | YES | 这里的滑动窗口解法比较巧妙，尤其是 hash table 的使用；还有这里的分析方法也需要注意一下 |
+| 487. Max Consecutive Ones II | medium | Sliding Window、Two Pointer | YES | 这里的解法跟 1004 题是一样的 |
+| 1004. Max Consecutive Ones III | medium | Sliding Window、Two Pointer | YES ||
 
 ## Greedy Algorithms
 | Problem                  | Difficulty | Method           | Redo | Comment                                        |
