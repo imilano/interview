@@ -143,6 +143,7 @@ bookCollapseSection: true
 | :------------------ | :--------- | :----- | :--- | :------------------------------------------------- |
 | 268. Missing Number | easy       | Math   | No   | 简单题，直接略过                                   |
 | 263. Ugly Number    | easy       | Math   | YES  | 这里还是需要稍微注意一下n 的范围是怎么一步步缩小的 |
+| 453. Minimum Moves to Equal Array Elements | medium | Math | YES | 这里的解法比较 tricky，比较难想得是如何从与 n-1 个数打交道转换为只需要与一个数打交道 |
 ## Dynamic Programming
 
 | Problem                                  | Difficulty | Method         | Redo | Comment                                                                                                          |
