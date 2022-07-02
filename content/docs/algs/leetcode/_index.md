@@ -66,6 +66,8 @@ bookCollapseSection: true
 | Problem                                                     | Difficulty | Method                         | Redo | Comment                                                                                                                                  |
 | :--------------- | :--------- | :-------- | :--- | :------ |
 | 277. Find the Celebrity | medium | Hash Table、Graph | YES | 这里的图论思想很值得思考 |
+| 200. Number of Islands | medium | DFS、Graph | YES | |
+| 133. Clone Graph | medium | DFS、BFS | YES | 这里 map 的用法很巧妙 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
@@ -103,7 +105,7 @@ bookCollapseSection: true
 | :-------------------------------------- | :--------- | :----------------- | :---- | :----------------------------------------------------------------------- |
 | 102. Binary Tree Level Order Traversal | medium | Binary Tree、BFS | No | 基础题，必须要会做 |
 | 103. Binary Tree ZigZag Level Order Traversal  | medium | Binary Tree、BFS | NO | 简单题，解法跟 102 题一致 |
-| 200. Number of Islands | medium | DFS、Graph | YES | |
+
 
 ## Search
 
