@@ -1,6 +1,10 @@
 ---
 title: 0102. Binary Tree Level Order Traversal
 weight: 10
+tags: [
+	"Binary Tree",
+	"BFS"
+]
 ---
 
 ## Description
@@ -64,4 +68,42 @@ func (q *Queue) Len() int {
 	return len(*q)
 }
 
+```
+也可以用一个数组来简单的模拟队列：
+```go
+type TreeNode struct {
+    Val int
+    Left *TreeNode
+    Right *TreeNode
+}
+
+func levelOrder(root *TreeNode) [][]int {
+    if root == nil {
+        return nil
+    }
+    
+    var res [][]int
+    var queue []*TreeNode
+    queue = append(queue, root)
+    for len(queue) != 0 {
+        size := len(queue)
+        var level []int
+        for i := 0; i < size; i++ {
+            node := queue[i]
+            level = append(level, node.Val)
+            if node.Left != nil {
+                queue = append(queue, node.Left)
+            }
+            
+            if node.Right != nil {
+                queue = append(queue, node.Right)
+            }
+        }
+        
+        queue = queue[size:]
+        res = append(res, level)
+    }
+    
+    return res
+}
 ```

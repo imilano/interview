@@ -1,6 +1,10 @@
 ---
 title: 0103. Binary Tree ZigZag Level Order Traversal
 weight: 10
+tags: [
+    "Binary tree",
+    "BFS"
+]
 ---
 
 ## Description
