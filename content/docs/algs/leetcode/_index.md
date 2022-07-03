@@ -69,6 +69,7 @@ bookCollapseSection: true
 | 200. Number of Islands | medium | DFS、Graph | YES | |
 | 133. Clone Graph | medium | DFS、BFS | YES | 这里 map 的用法很巧妙 |
 | 490. The Maze | medium | BFS、DFS | YES | 这也算是 BFS 的变体应用，也可以从这里总结出一个 pattern 出来 |
+| 130. Surrounding Regions | medium | DFS、BFS | YES | 反向思考 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
