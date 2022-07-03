@@ -6,4 +6,7 @@ Solutions # 简单题，使用队列进行层次遍历即可。
 Return a deep copy (clone) of the graph.
 Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.
 class Node { public int val; public List&amp;lt;Node&amp;gt; neighbors; } Test case format:
-For simplicity, each node&amp;rsquo;s value is the same as the node&amp;rsquo;s index (1-indexed). For example, the first node with val == 1, the second node with val == 2, and so on.</description></item></channel></rss>
+For simplicity, each node&amp;rsquo;s value is the same as the node&amp;rsquo;s index (1-indexed). For example, the first node with val == 1, the second node with val == 2, and so on.</description></item><item><title>0314. Binary Tree Vertical Order Traversal</title><link>https://example.com/docs/algs/leetcode/314_binary_tree_vertical_order_traversal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/docs/algs/leetcode/314_binary_tree_vertical_order_traversal/</guid><description>Description # Given a binary tree, return the vertical order traversal of its nodes&amp;rsquo; values. (ie, from top to bottom, column by column).
+If two nodes are in the same row and column, the order should be from left to right.
+Solutions # Level Order Traversal # 这里可以隐约看出来是要使用层序遍历，但是与一般的层序遍历的稍微有点不同。这里的主要思想是：对每个节点赋予一个值 col，然后对于其左节点，col 减 1，对于右节点， col 加 1。这样的话，同一列的节点都会有同一个值 col。在入队的时候，不仅需要将节点入队，还需要将节点的 row 入队，二者可以组成一个 pair。
+func vericalOrder(root *TreeNode) [][]int { if root == nil { return nil } var res [][]int type pair struct { Node *TreeNode Col int } // 层序遍历需要用到的队列 var queue []pair // 记录每个 col 上有哪些节点 dict := make(map[int]*TreeNode) queue = append(queue, pair{root, 0}) for len(queue) !</description></item></channel></rss>
