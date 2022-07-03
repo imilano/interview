@@ -105,6 +105,7 @@ bookCollapseSection: true
 | :-------------------------------------- | :--------- | :----------------- | :---- | :----------------------------------------------------------------------- |
 | 102. Binary Tree Level Order Traversal | medium | Binary Tree、BFS | No | 基础题，必须要会做 |
 | 103. Binary Tree ZigZag Level Order Traversal  | medium | Binary Tree、BFS | NO | 简单题，解法跟 102 题一致 |
+| 314. Binary Tree Vertical Order Traversal | medium | Binary Tree、BFS | YES | 这里是 BFS 的应用之一，这里我一开始没想出编号的方法 |
 
 
 ## Search
