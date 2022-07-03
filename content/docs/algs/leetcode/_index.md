@@ -68,6 +68,7 @@ bookCollapseSection: true
 | 277. Find the Celebrity | medium | Hash Table、Graph | YES | 这里的图论思想很值得思考 |
 | 200. Number of Islands | medium | DFS、Graph | YES | |
 | 133. Clone Graph | medium | DFS、BFS | YES | 这里 map 的用法很巧妙 |
+| 490. The Maze | medium | BFS、DFS | YES | 这也算是 BFS 的变体应用，也可以从这里总结出一个 pattern 出来 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
@@ -106,6 +107,7 @@ bookCollapseSection: true
 | 102. Binary Tree Level Order Traversal | medium | Binary Tree、BFS | No | 基础题，必须要会做 |
 | 103. Binary Tree ZigZag Level Order Traversal  | medium | Binary Tree、BFS | NO | 简单题，解法跟 102 题一致 |
 | 314. Binary Tree Vertical Order Traversal | medium | Binary Tree、BFS | YES | 这里是 BFS 的应用之一，这里我一开始没想出编号的方法 |
+
 
 
 ## Search
