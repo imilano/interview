@@ -70,6 +70,7 @@ bookCollapseSection: true
 | 133. Clone Graph | medium | DFS、BFS | YES | 这里 map 的用法很巧妙 |
 | 490. The Maze | medium | BFS、DFS | YES | 这也算是 BFS 的变体应用，也可以从这里总结出一个 pattern 出来 |
 | 130. Surrounding Regions | medium | DFS、BFS | YES | 反向思考 |
+| 1091. Shortest Path in Binary Matrix | medium | DFS、BFS | YES | 这个题有很多注意点需要看：一个是迷宫遍历的变体，另一个是数字转换为字符串的坑 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
