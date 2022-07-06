@@ -41,6 +41,7 @@ bookCollapseSection: true
 | 362. Design Hit Counter              | unknown    | Queue                | No   |                                                              |
 | 264. Ugly Number II                  | medium     | Queue                | YES  | 第一次做的时候做了一个错误解法，还是要注意丑数是怎么推出来的 |
 | 1642.Furthest Building you can Reach | medium     | Heap、Priority Queue | YES  | 这里的解法很巧妙，需要注意一下                               |
+| 542. 01 Matrix | medium |BFS | YES | 一个复杂的 case 完全可以让正确的算法不能 AC，所以就解题而言，先要把复杂的 case 给进行优先处理，或者算法的实现要考虑复杂 case 的情况|
 
 ### Hash Table
 | Problem                                                     | Difficulty | Method                         | Redo | Comment                                                                                                                                  |
