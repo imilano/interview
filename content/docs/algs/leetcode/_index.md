@@ -74,6 +74,7 @@ bookCollapseSection: true
 | 1091. Shortest Path in Binary Matrix | medium | DFS、BFS | YES | 这个题有很多注意点需要看：一个是迷宫遍历的变体，另一个是数字转换为字符串的坑 |
 | 417. Pacific Atlantic Water Flow | medium | DFS | YES | 这个题的思路很有用，另外也有几个遍历技巧值得注意 |
 | 207. Course Scheduler | medium | BFS、DFS、Topological Sorting | YES | 这里是典型的拓扑排序的解法 |
+| 210. Course Scheduler II | medium | BFS、DFS、Topological Sorting | YES | 注意拓扑排序中是什么时候需要加入节点 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
