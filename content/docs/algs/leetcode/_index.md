@@ -73,6 +73,7 @@ bookCollapseSection: true
 | 130. Surrounding Regions | medium | DFS、BFS | YES | 反向思考 |
 | 1091. Shortest Path in Binary Matrix | medium | DFS、BFS | YES | 这个题有很多注意点需要看：一个是迷宫遍历的变体，另一个是数字转换为字符串的坑 |
 | 417. Pacific Atlantic Water Flow | medium | DFS | YES | 这个题的思路很有用，另外也有几个遍历技巧值得注意 |
+| 207. Course Scheduler | medium | BFS、DFS、Topological Sorting | YES | 这里是典型的拓扑排序的解法 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
