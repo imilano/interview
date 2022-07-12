@@ -114,6 +114,8 @@ bookCollapseSection: true
 | 103. Binary Tree ZigZag Level Order Traversal  | medium | Binary Tree、BFS | NO | 简单题，解法跟 102 题一致 |
 | 314. Binary Tree Vertical Order Traversal | medium | Binary Tree、BFS | YES | 这里是 BFS 的应用之一，这里我一开始没想出编号的方法 |
 | 752. Open the Lock | medium | BFS | YES | 这里是迷宫遍历的变体，用到的几个 trick 需要注意一下 |
+| 543. Diameter of Binary Tree | easy | Recursive | NO | |
+| 310. Minimum Height Tree| medium | BFS | YES | 这里首先注意 BFS 的终止条件，这里与一般的 BFS 不太相同；第二注意如何将 BFS 应用到无向图|
 
 
 ## Search
