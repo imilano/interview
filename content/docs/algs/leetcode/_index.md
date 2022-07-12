@@ -116,6 +116,7 @@ bookCollapseSection: true
 | 752. Open the Lock | medium | BFS | YES | 这里是迷宫遍历的变体，用到的几个 trick 需要注意一下 |
 | 543. Diameter of Binary Tree | easy | Recursive | NO | |
 | 310. Minimum Height Tree| medium | BFS | YES | 这里首先注意 BFS 的终止条件，这里与一般的 BFS 不太相同；第二注意如何将 BFS 应用到无向图|
+| 366. Find Leaves of Binary Tree | medium | BFS | YES | 这个题的解法与 310 题差不多，其实都是图的拓扑排序的问题，而且 310 和 366 都是针对无向图进行的拓扑排序，还是很值得关注的 |
 
 
 ## Search
