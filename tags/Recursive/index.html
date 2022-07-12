@@ -1,5 +1,5 @@
 <!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Recursive"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/tags/Recursive/"><title>Recursive | Interview</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script>
-<script defer src=/en.search.min.2ac6e99da9fb5a1885d6d3f96963daf82e9c5aa8cc5564f446eecef17596cc1c.js integrity="sha256-Ksbpnan7WhiF1tP5aWPa+C6cWqjMVWT0Ru7O8XWWzBw=" crossorigin=anonymous></script>
+<script defer src=/en.search.min.82b6ae9c2860b126da5e860bf4f8db58b4dfc9efb3b29fff06fb48cccbbec1a3.js integrity="sha256-graunChgsSbaXoYL9PjbWLTfye+zsp//BvtIzMu+waM=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://example.com/tags/Recursive/index.xml title=Interview></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Interview</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
@@ -15,7 +15,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>4</span></li><li class="flex justify-between"><a href=/tags/BFS/>BFS</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/Binary-Tree/>Binary Tree</a>
-<span>6</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Brute-Force/>Brute Force</a>
@@ -50,7 +50,7 @@ English</a></label><ul><li><a href=https://example.com/zh/>Chinese</a></li></ul>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>8</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>6</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
 <span>11</span></li><li class="flex justify-between"><a href=/tags/Sliding-Window/>Sliding Window</a>
 <span>9</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
@@ -73,7 +73,11 @@ func generateParenthesis(n int) []string { var res []string if n == 0 { return r
 <a href=/tags/Stack/>Stack</a></div><p>Description # Given the head of a singly linked list and two integers left and right where left &lt;= right, reverse the nodes of the list from position left to position right, and return the reversed list.
 Solutions # 使用头插法来翻转节点：先找到待翻转节点的前一个节点pre，pre 的下一个几点就是要翻转的第一个节点 cur，使用一个节点 t 表示 cur 的下一个节点，防止断链。然后将 cur 连接到 t 的下一个节点上，然后将 t 的下一个节点设置为 cur，然后再将 pre 指向 t，这样就完成了一个节点的翻转，然后继续翻转下面的节点即可。
 func reverseBetween(head *ListNode, left int, right int) *ListNode { if head == nil || right &lt; left { return nil } // 试用 dummy 防止出现需要翻转第一个节点的情况 dummy := new(ListNode) dummy.
-<a href=/docs/algs/leetcode/92_reverse_linked_list_ii/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/206_reverse_linked_list/>0206. Reverse Linked List</a></h2><div><a href=/tags/LinkedList/>LinkedList</a>,
+<a href=/docs/algs/leetcode/92_reverse_linked_list_ii/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/124_binary_tree_maximum_path_sum/>0124. Binary Tree Maximum Path Sum</a></h2><div><a href=/tags/Binary-Tree/>Binary Tree</a>,
+<a href=/tags/Recursive/>Recursive</a></div><p>Description # A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
+The path sum of a path is the sum of the node&rsquo;s values in the path.
+Given the root of a binary tree, return the maximum path sum of any non-empty path.
+<a href=/docs/algs/leetcode/124_binary_tree_maximum_path_sum/>...</a></p></article><article class="markdown book-post"><h2><a href=/docs/algs/leetcode/206_reverse_linked_list/>0206. Reverse Linked List</a></h2><div><a href=/tags/LinkedList/>LinkedList</a>,
 <a href=/tags/Stack/>Stack</a>,
 <a href=/tags/Recursive/>Recursive</a></div><p>Description # Given the head of a singly linked list, reverse the list, and return the reversed list.
 Solutions # Iterative # 迭代法，但是要注意虚拟头节点的使用。
@@ -88,7 +92,7 @@ Solutions # Recursive # 这是题主一开始想出来的方法：用一个全�
 <span>4</span></li><li class="flex justify-between"><a href=/tags/BFS/>BFS</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/Binary-Search/>Binary Search</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/Binary-Tree/>Binary Tree</a>
-<span>6</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
+<span>7</span></li><li class="flex justify-between"><a href=/tags/Bit-Manipulation/>Bit Manipulation</a>
 <span>2</span></li><li class="flex justify-between"><a href=/tags/Bit-Operations/>Bit Operations</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Branch-Pruning/>Branch Pruning</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Brute-Force/>Brute Force</a>
@@ -123,7 +127,7 @@ Solutions # Recursive # 这是题主一开始想出来的方法：用一个全�
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Queue/>Queue</a>
 <span>8</span></li><li class="flex justify-between"><a href=/tags/quick-sort/>quick sort</a>
 <span>1</span></li><li class="flex justify-between"><a href=/tags/Recursive/>Recursive</a>
-<span>5</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
+<span>6</span></li><li class="flex justify-between"><a href=/tags/Search/>Search</a>
 <span>11</span></li><li class="flex justify-between"><a href=/tags/Sliding-Window/>Sliding Window</a>
 <span>9</span></li><li class="flex justify-between"><a href=/tags/Sort/>Sort</a>
 <span>13</span></li><li class="flex justify-between"><a href=/tags/Stack/>Stack</a>
