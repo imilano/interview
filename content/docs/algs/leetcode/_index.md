@@ -120,6 +120,7 @@ bookCollapseSection: true
 | 124. Binary Tree Maximum Path Sum | hard | Tree、Branch Pruning | YES | 这里的剪枝过程比较值得关注 |
 | 226. Invert Binary Tree | easy | Recursive | NO | |
 | 101. Symmetic Tree | easy | Recursive | No | |
+| 236. Lowest Common Ancestor of Binary Tree | medium | Recursive、Binary Tree | YES | 这里的分析过程需要注意 |
 
 
 ## Search
