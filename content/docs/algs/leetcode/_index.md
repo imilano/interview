@@ -123,6 +123,7 @@ bookCollapseSection: true
 | 236. Lowest Common Ancestor of Binary Tree | medium | Recursive、Binary Tree | YES | 这里的分析过程需要注意 |
 | 235. Lowest Common Ancestor of Binary Search Tree | medium | Recursive、Iterative | YES | 这里需要注意的是如何将递归思路转换为迭代的思路 |
 | 104. Max Depth of Binary Tree | easy | Recursive、Iterative | YES | 这里的迭代解法需要注意一下 |
+| 111. Minimum Depth of Binary Tree | easy | Recursive、Iterative | No | 这里需要注意递归解法的遍历终止条件 |
 
 
 ## Search
