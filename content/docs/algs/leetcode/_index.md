@@ -126,7 +126,7 @@ bookCollapseSection: true
 | 104. Max Depth of Binary Tree | easy | Recursive、Iterative | YES | 这里的迭代解法需要注意一下 |
 | 559. Maximum Depth of N-ary Tree | easy  | Iterative | No | 这里实际上就是 104 题的扩展版 |
 | 111. Minimum Depth of Binary Tree | easy | Recursive、Iterative | No | 这里需要注意递归解法的遍历终止条件 |
-
+| 572. Subtree of Another Tree | easy | Recursive | Yes | 注意这里 SameTree 的写法 |
 
 ## Search
 
