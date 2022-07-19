@@ -1,6 +1,9 @@
 ---
 title: 0098. Validate Bianry Search Tree
 weight: 10
+tags: [
+    "Binary Search Tree"
+]
 ---
 
 ## Description
