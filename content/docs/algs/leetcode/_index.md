@@ -127,6 +127,7 @@ bookCollapseSection: true
 | 559. Maximum Depth of N-ary Tree | easy  | Iterative | No | 这里实际上就是 104 题的扩展版 |
 | 111. Minimum Depth of Binary Tree | easy | Recursive、Iterative | No | 这里需要注意递归解法的遍历终止条件 |
 | 572. Subtree of Another Tree | easy | Recursive | Yes | 注意这里 SameTree 的写法 |
+| 230. Kth Smallest Element in a BST | medium | Tree、 Inorder Traversal | No | |
 
 ## Search
 
