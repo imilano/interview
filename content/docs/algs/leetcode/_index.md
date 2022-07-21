@@ -131,6 +131,7 @@ bookCollapseSection: true
 | 98. Validate Binary Search Tree | medium | BST、Recursive | YES | |
 | 669. Trim a Binary Search Tree | medium | Recursive | YES | 这里跟最小公共子节点的解法一致，但是在对子节点进行处理上不太一致。|
 | 700. Search In a Binary Search Tree | easy | Recursive、Iterative、BST | No | |
+| 108. Convert Sorted Array to Binary Search Tree | easy | Recursive、BST | No | |
 
 ## Search
 
