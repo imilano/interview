@@ -129,6 +129,7 @@ bookCollapseSection: true
 | 572. Subtree of Another Tree | easy | Recursive | Yes | 注意这里 SameTree 的写法 |
 | 230. Kth Smallest Element in a BST | medium | BST、 Inorder Traversal | No | |
 | 98. Validate Binary Search Tree | medium | BST、Recursive | YES | |
+| 669. Trim a Binary Search Tree | medium | Recursive | YES | 这里跟最小公共子节点的解法一致，但是在对子节点进行处理上不太一致。|
 
 ## Search
 
