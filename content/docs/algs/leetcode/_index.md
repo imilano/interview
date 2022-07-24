@@ -63,7 +63,7 @@ bookCollapseSection: true
 | 454. 4Sum II                                                | medium     | Hash Table、Divide             | YES  | 这里降低时间复杂度的思想比较巧妙，值得学习                                                                                               |
 | 277. Find the Celebrity | medium | Hash Table、Graph | YES | 这里的图论思想很值得思考 |
 | 138. Copy List With Random Pointer | medium | Hash Table、List | YES | 列表、图拷贝都需要结合哈希表来做 |
-
+| 290. Word Patten | easy | Hash Table | YES | 注意这里是个双射 |
 ### Graph
 | Problem                                                     | Difficulty | Method                         | Redo | Comment                                                                                                                                  |
 | :--------------- | :--------- | :-------- | :--- | :------ |
