@@ -76,6 +76,7 @@ bookCollapseSection: true
 | 417. Pacific Atlantic Water Flow | medium | DFS | YES | 这个题的思路很有用，另外也有几个遍历技巧值得注意 |
 | 207. Course Scheduler | medium | BFS、DFS、Topological Sorting | YES | 这里是典型的拓扑排序的解法 |
 | 210. Course Scheduler II | medium | BFS、DFS、Topological Sorting | YES | 注意拓扑排序中是什么时候需要加入节点 |
+| 51. N-Queens | hard | DFS、Brute Force | YES | N 皇后问题，当前行、列以及主/副对角线都不能有皇后 |
 ### Linked List
 | Problem                               | Difficulty | Method                               | Redo | Comment                                                      |
 | :------------------------------------ | :--------- | :----------------------------------- | :--- | :----------------------------------------------------------- |
